@@ -6,42 +6,52 @@ title_zh: "精灵宝钻"
 author: 待补充
 translator:
 source_platform: weread
-raw_source_path: "微信读书/魔戒系列/精灵宝钻.md"
+raw_source_path: "微信读书笔记/魔戒系列/精灵宝钻.md"
 original_category: fantasy
 subject_domains:
   - fantasy
-topic_tags: []
-note_count:
+topic_tags:
+  - fall_theme
+  - mortality
+  - machine_vs_magic
+  - subcreation_ethics
+  - tragic_misrecognition
+note_count: 1
 notes_policy: summary_only
 copyright_note: Keep bibliographic facts, short locating snippets, and paraphrased summaries. Avoid long verbatim excerpts.
-status: draft
-last_reviewed: 2026-03-16
+status: active
+last_reviewed: 2026-04-01
 ---
 
 # 书籍定位
 
-这本书已纳入结构化处理队列。当前先建立 `source_book` 入口，后续会按主题簇拆成来源笔记、概念卡、动作卡、主题包和想法卡。
+这本书已进入首批结构化处理，当前先建立了“堕落-必死-机械/魔法张力 + 悲剧误认机制”的首批骨架，后续可继续加厚谱系与战争线。
 
 ## 为什么值得整理
 
-- 当前先保留来源路径和分类归属。
-- 后续整理时再依据真实笔记内容补齐主题、问题和方法线索。
+- 可把《精灵宝钻》的高密度设定转译为伦理母题与力量机制框架。
+- 与 fantasy/history 的权力约束与文明冲突主线可直接对接。
 
 ## 计划拆出的主题
 
-- 待从原始笔记中提炼
-- 待从原始笔记中提炼
-- 待从原始笔记中提炼
+- 堕落如何从次创造转向控制冲动
+- 机械与魔法的共同点如何指向权力逻辑
+- 命运压力与误认如何触发不可逆悲剧
 
 ## 原始来源说明
 
-- 微信读书导出文件：`微信读书/魔戒系列/精灵宝钻.md`
-- 当前处理状态：已建立 `source_book`，待继续拆解
+- 微信读书笔记导出文件：`微信读书/魔戒系列/精灵宝钻.md`
+- 当前处理状态：已完成首批最小闭环，待继续加厚
 
 ## 已产出内容
 
-- 暂无，待继续整理
+- `sources/notes/fantasy/note-0003-silmarillion-links-fall-mortality-and-machine-magic-tension.md`
+- `concepts/fantasy/concept-0005-fall-often-starts-when-subcreation-turns-into-control.md`
+- `concepts/fantasy/concept-0006-tragedy-intensifies-when-fate-pressure-meets-misrecognition.md`
+- `actions/fantasy/action-0003-read-silmarillion-via-ethics-power-choice-and-tragedy.md`
+- `collections/fantasy/collection-0003-silmarillion-first-batch-on-fall-power-and-tragic-mechanisms.md`
+- `ideas/fantasy/idea-0003-the-deepest-evil-often-begins-as-a-plan-to-do-good-faster.md`
 
 ## 备注
 
-- 当前阶段只完成来源挂载。
+- 当前阶段已完成首批骨架，后续可补创世谱系、精灵诸族与大战阶段化叙事的第二批主题。

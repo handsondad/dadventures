@@ -6,7 +6,7 @@ title_zh: 填写书名
 author: 填写作者
 translator:
 source_platform: weread
-raw_source_path: ../../../微信读书/投资/投资中最重要的事.md
+raw_source_path: ../../../微信读书笔记/投资/投资中最重要的事.md
 original_category: investing
 subject_domains:
   - investing
@@ -37,7 +37,7 @@ last_reviewed: 2026-03-13
 
 ## 原始来源说明
 
-- 对应哪一个微信读书导出文件
+- 对应哪一个微信读书笔记导出文件
 - 如果已复制到 `sources/raw/`，记录当前工作副本文件名
 
 ## 已产出内容

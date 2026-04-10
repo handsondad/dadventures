@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0007
 source_book: book-0002
 source_section: 第三章 微生物：你和地球都是属于微生物的
-raw_source_path: "微信读书/人体/人体简史.md"
+raw_source_path: "微信读书笔记/人体/人体简史.md"
 note_kind: theme_summary
 subject_domains:
   - human_body

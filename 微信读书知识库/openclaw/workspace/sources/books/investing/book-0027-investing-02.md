@@ -6,7 +6,7 @@ title_zh: "周期"
 author: 霍华德・马克斯
 translator:
 source_platform: weread
-raw_source_path: "微信读书/投资/周期.md"
+raw_source_path: "微信读书笔记/投资/周期.md"
 original_category: investing
 subject_domains:
   - investing
@@ -42,7 +42,7 @@ last_reviewed: 2026-03-17
 
 ## 原始来源说明
 
-- 微信读书导出文件：`微信读书/投资/周期.md`
+- 微信读书笔记导出文件：`微信读书/投资/周期.md`
 - 当前处理状态：已完成三批主题：`周期不是预测表而是极端与均值回归框架 + 信贷窗口开关决定风险暴露与便宜货何时出现`，`逆周期政策管理的是艰难平衡而不是消灭波动 + 经营杠杆和财务杠杆会把同样的需求变化放大成完全不同的利润结果`，以及 `好企业烂财务 + 不良债权的价值来自企业价值、求偿顺序与时间`
 
 ## 已产出内容

@@ -6,7 +6,7 @@ title_zh: 上帝的手术刀：基因编辑简史
 author: 王立铭
 translator:
 source_platform: weread
-raw_source_path: "微信读书/人体/上帝的手术刀：基因编辑简史.md"
+raw_source_path: "微信读书笔记/人体/上帝的手术刀：基因编辑简史.md"
 original_category: human_body
 subject_domains:
   - human_body
@@ -41,7 +41,7 @@ last_reviewed: 2026-03-13
 
 ## 原始来源说明
 
-- 微信读书导出文件：`微信读书/人体/上帝的手术刀：基因编辑简史.md`
+- 微信读书笔记导出文件：`微信读书/人体/上帝的手术刀：基因编辑简史.md`
 - 当前已处理范围：前言、达尔文的麻烦、DNA 作为遗传物质、双螺旋与复制、基因治疗逻辑、基因编辑工具链、CRISPR 机制与部分技术边界
 - 当前尚未处理：更完整的伦理争议、临床案例延展和专利战细节
 

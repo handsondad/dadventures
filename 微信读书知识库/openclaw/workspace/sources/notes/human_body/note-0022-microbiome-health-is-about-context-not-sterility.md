@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0022
 source_book: book-0005
 source_section: 第五章 人体内的微生物
-raw_source_path: "微信读书/人体/身体的秘密.md"
+raw_source_path: "微信读书笔记/人体/身体的秘密.md"
 note_kind: theme_summary
 subject_domains:
   - human_body

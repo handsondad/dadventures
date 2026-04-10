@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0073
 source_book: book-0029
 source_section: 01 以实业的眼光做投资 + 初版序
-raw_source_path: "微信读书/投资/投资中最简单的事.md"
+raw_source_path: "微信读书笔记/投资/投资中最简单的事.md"
 note_kind: theme_summary
 subject_domains:
   - investing

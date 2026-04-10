@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0005
 source_book: book-0035
 source_section: 第十一章 中央集权制是如何在不摧毁旧体制的前提下潜移默化地深入其中并取而代之的 + 第十二章 旧制度下的管理风尚
-raw_source_path: "微信读书/政治/旧制度与大革命.md"
+raw_source_path: "微信读书笔记/政治/旧制度与大革命.md"
 note_kind: theme_summary
 subject_domains:
   - politics

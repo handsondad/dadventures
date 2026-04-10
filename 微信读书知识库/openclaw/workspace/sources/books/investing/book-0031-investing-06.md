@@ -6,7 +6,7 @@ title_zh: "文明资本和投资"
 author: 丁昶
 translator:
 source_platform: weread
-raw_source_path: "微信读书/投资/文明资本和投资.md"
+raw_source_path: "微信读书笔记/投资/文明资本和投资.md"
 original_category: investing
 subject_domains:
   - investing
@@ -41,7 +41,7 @@ last_reviewed: 2026-03-16
 
 ## 原始来源说明
 
-- 微信读书导出文件：`微信读书/投资/文明资本和投资.md`
+- 微信读书笔记导出文件：`微信读书/投资/文明资本和投资.md`
 - 当前处理状态：已完成首批主题：`现代市场靠制度成熟 + 股份公司靠长期资本和利益相关方秩序成立`
 
 ## 已产出内容

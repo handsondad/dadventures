@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0015
 source_book: book-0051
 source_section: 沙特与沙特阿美石油公司共生 / 第一部分 石油改变了沙特王国
-raw_source_path: "微信读书/经济/沙特公司.md"
+raw_source_path: "微信读书笔记/经济/沙特公司.md"
 note_kind: theme_summary
 subject_domains:
   - economics

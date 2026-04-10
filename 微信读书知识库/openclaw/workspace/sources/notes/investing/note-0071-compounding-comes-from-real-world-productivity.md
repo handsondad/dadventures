@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0071
 source_book: book-0028
 source_section: 我该买什么基金？
-raw_source_path: "微信读书/投资/投资中我相信的事.md"
+raw_source_path: "微信读书笔记/投资/投资中我相信的事.md"
 note_kind: theme_summary
 subject_domains:
   - investing

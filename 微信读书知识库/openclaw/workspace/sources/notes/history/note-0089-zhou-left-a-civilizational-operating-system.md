@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0089
 source_book: book-0018
 source_section: 05 周人的遗产之一 ——世界观 + 07 周人的遗产之三 ——非表音文字 + 08 周人的遗产之四 ——中国文明核心地理区域 + 02 生生不息的中国文字系统 + 05 沿用至今的汉字文法
-raw_source_path: "微信读书/历史/讲给大家的中国历史02.md"
+raw_source_path: "微信读书笔记/历史/讲给大家的中国历史02.md"
 note_kind: theme_summary
 subject_domains:
   - history

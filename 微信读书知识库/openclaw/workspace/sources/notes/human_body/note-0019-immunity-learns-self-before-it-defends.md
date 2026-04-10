@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0019
 source_book: book-0002
 source_section: 第十二章 免疫：发炎是免疫系统战斗后的痕迹
-raw_source_path: "微信读书/人体/人体简史.md"
+raw_source_path: "微信读书笔记/人体/人体简史.md"
 note_kind: theme_summary
 subject_domains:
   - human_body

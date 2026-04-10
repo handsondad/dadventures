@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0013
 source_book: book-0047
 source_section: 我如何看待信贷和债务 / 贷款的周期 / 对周期的考察
-raw_source_path: "微信读书/经济/债务危机.md"
+raw_source_path: "微信读书笔记/经济/债务危机.md"
 note_kind: theme_summary
 subject_domains:
   - economics

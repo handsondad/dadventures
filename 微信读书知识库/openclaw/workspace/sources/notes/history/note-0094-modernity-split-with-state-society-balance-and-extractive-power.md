@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0094
 source_book: book-0019
 source_section: 第九章 从人权平等观念走向民主政治 + 第十章 欧洲近代国家的殖民和掠夺 + 第十一章 工业革命的动力及其对资源的侵占 + 第十三章 民族国家分化为专制国家或民主国家 + 第十九章 全球经济发展对社会政治和信仰的影响
-raw_source_path: "微信读书/历史/许倬云说历史：现代文明的成坏.md"
+raw_source_path: "微信读书笔记/历史/许倬云说历史：现代文明的成坏.md"
 note_kind: theme_summary
 subject_domains:
   - history

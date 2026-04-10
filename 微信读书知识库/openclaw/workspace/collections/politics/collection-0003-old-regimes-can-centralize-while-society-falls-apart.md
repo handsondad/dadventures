@@ -73,7 +73,7 @@ last_reviewed: 2026-03-17
 
 1. 现在更适合把 `collection-0003` 和 `collection-0007` 合起来看，形成《旧制度与大革命》的两层完整结构。
 2. 这两批内容都已经继续并入 politics 跨书总图 `collection-0004` 和首版总论 `collection-0005`。
-3. 如果继续留在 politics，下一步更适合回到《筚路维艰》补 `八大改革/计划与法制边界`，或暂时回 breadth-first。
+3. 维护阶段优先检查这两层内容在 `collection-0004/0005` 的入口一致性与检索词对齐。
 
 ## 检索提示
 

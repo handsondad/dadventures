@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0078
 source_book: book-0031
 source_section: 人赋人权 + 新型资本主义
-raw_source_path: "微信读书/投资/文明资本和投资.md"
+raw_source_path: "微信读书笔记/投资/文明资本和投资.md"
 note_kind: theme_summary
 subject_domains:
   - investing

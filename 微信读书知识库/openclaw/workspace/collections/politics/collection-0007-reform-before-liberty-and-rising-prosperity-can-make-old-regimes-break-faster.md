@@ -74,7 +74,7 @@ last_reviewed: 2026-03-17
 
 1. 现在更适合把 `collection-0003` 和 `collection-0007` 合起来看，形成《旧制度与大革命》的两层完整结构。
 2. 这两批内容都已经适合继续并入 `collection-0004` 和 `collection-0005`，把 politics 的脆弱性层压厚。
-3. 如果继续留在 politics，下一步更适合回到《筚路维艰》补 `八大改革/计划与法制边界`，或暂时回 breadth-first。
+3. 维护阶段优先做脆弱性层的短版调用测试，确保在 `collection-0005` 中可被稳定复用。
 
 ## 检索提示
 

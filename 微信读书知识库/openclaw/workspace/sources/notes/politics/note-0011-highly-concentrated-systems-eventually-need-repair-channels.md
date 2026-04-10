@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0011
 source_book: book-0036
 source_section: 八大改革、市场补充与集体领导尝试
-raw_source_path: "微信读书/政治/筚路维艰：中国社会主义路径的五次选择.md"
+raw_source_path: "微信读书笔记/政治/筚路维艰：中国社会主义路径的五次选择.md"
 note_kind: theme_summary
 subject_domains:
   - politics

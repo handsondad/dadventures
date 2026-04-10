@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0016
 source_book: book-0051
 source_section: 富油国和国际石油公司之间的利益博弈 / “收购与国有化毫无关系”
-raw_source_path: "微信读书/经济/沙特公司.md"
+raw_source_path: "微信读书笔记/经济/沙特公司.md"
 note_kind: theme_summary
 subject_domains:
   - economics

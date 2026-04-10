@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0091
 source_book: book-0016
 source_section: 前言 + 37 福音派传教士 公元1840年—公元1855年 + 耶路撒冷的早晨：从那时到现在
-raw_source_path: "微信读书/历史/耶路撒冷三千年.md"
+raw_source_path: "微信读书笔记/历史/耶路撒冷三千年.md"
 note_kind: theme_summary
 subject_domains:
   - history

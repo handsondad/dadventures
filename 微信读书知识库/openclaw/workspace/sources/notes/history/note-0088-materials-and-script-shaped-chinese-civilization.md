@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0088
 source_book: book-0017
 source_section: 13 陶器——理解中国文化开端的关键 + 05 新石器时代村落遗址与陶器 + 02 中国古代文字的特殊功能 + 12 中国文字在古代的崇高地位 + 07 《尚书》与《诗经》语言文字对比带来的启发
-raw_source_path: "微信读书/历史/讲给大家的中国历史01.md"
+raw_source_path: "微信读书笔记/历史/讲给大家的中国历史01.md"
 note_kind: theme_summary
 subject_domains:
   - history

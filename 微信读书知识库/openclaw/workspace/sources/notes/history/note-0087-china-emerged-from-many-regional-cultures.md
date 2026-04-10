@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0087
 source_book: book-0017
 source_section: 01 为什么要重新认识中国历史？ + 11 中国历史要从新石器时代讲起 + 12 满天星斗的新石器时代文化 + 05 三大区域的互相竞争推动了国家的产生
-raw_source_path: "微信读书/历史/讲给大家的中国历史01.md"
+raw_source_path: "微信读书笔记/历史/讲给大家的中国历史01.md"
 note_kind: theme_summary
 subject_domains:
   - history

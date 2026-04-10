@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0027
 source_book: book-0053
 source_section: 每一次分手都是心灵的修复 + 别拿自己的尺子量对方 + 孩子不该是你的最爱
-raw_source_path: "微信读书/育儿/为何家会伤人.md"
+raw_source_path: "微信读书笔记/育儿/为何家会伤人.md"
 note_kind: theme_summary
 subject_domains:
   - parenting

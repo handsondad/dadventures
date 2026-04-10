@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0036
 source_book: book-0054
 source_section: 附录Ⅱ 五个案例分析和述评
-raw_source_path: "微信读书/育儿/儿童教育心理学.md"
+raw_source_path: "微信读书笔记/育儿/儿童教育心理学.md"
 note_kind: theme_summary
 subject_domains:
   - parenting

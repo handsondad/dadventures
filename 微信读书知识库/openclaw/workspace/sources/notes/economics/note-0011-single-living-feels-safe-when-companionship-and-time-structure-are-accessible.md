@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0011
 source_book: book-0049
 source_section: 第四章 独居人群如何获得社会安全感？
-raw_source_path: "微信读书/经济/单身社会.md"
+raw_source_path: "微信读书笔记/经济/单身社会.md"
 note_kind: theme_summary
 subject_domains:
   - economics

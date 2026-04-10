@@ -6,7 +6,7 @@ title_zh: "股市进阶之道"
 author: 李杰
 translator:
 source_platform: weread
-raw_source_path: "微信读书/投资/股市进阶之道.md"
+raw_source_path: "微信读书笔记/投资/股市进阶之道.md"
 original_category: investing
 subject_domains:
   - investing
@@ -41,7 +41,7 @@ last_reviewed: 2026-03-16
 
 ## 原始来源说明
 
-- 微信读书导出文件：`微信读书/投资/股市进阶之道.md`
+- 微信读书笔记导出文件：`微信读书/投资/股市进阶之道.md`
 - 当前处理状态：已完成首批主题：`超额收益来自壁垒和不变性 + 看对做错常常输在人性与纪律`
 
 ## 已产出内容

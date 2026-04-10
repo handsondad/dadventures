@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0038
 source_book: book-0055
 source_section: 孩子如何理解他人 + 孩子生来就会做的事 + 真正永恒的三角关系 + 让奇迹发生的三个途径 + 孩子生来就是“世界公民” + 他人：天然的学习助手
-raw_source_path: "微信读书/育儿/孩子如何学习.md"
+raw_source_path: "微信读书笔记/育儿/孩子如何学习.md"
 note_kind: theme_summary
 subject_domains:
   - parenting

@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0024
 source_book: book-0052
 source_section: 9.思考、游戏和语言出生至3岁以上 + 13.连贯起来：超过一个词1至2岁 + 15.倾听我能发出的声音：早期的语音发展9个月至3岁
-raw_source_path: "微信读书/育儿/0-6岁抓住孩子的语言关键期.md"
+raw_source_path: "微信读书笔记/育儿/0-6岁抓住孩子的语言关键期.md"
 note_kind: theme_summary
 subject_domains:
   - parenting

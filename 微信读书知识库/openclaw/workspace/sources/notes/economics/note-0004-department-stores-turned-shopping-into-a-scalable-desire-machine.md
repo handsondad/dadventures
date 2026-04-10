@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0004
 source_book: book-0048
 source_section: 第二章 商品大观：百货商店和逛街
-raw_source_path: "微信读书/经济/制造消费者：消费主义全球史.md"
+raw_source_path: "微信读书笔记/经济/制造消费者：消费主义全球史.md"
 note_kind: theme_summary
 subject_domains:
   - economics

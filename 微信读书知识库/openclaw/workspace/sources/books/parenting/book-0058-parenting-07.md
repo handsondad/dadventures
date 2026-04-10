@@ -6,7 +6,7 @@ title_zh: "理解孩子的语言"
 author: 伊莎贝拉・费利奥沙
 translator:
 source_platform: weread
-raw_source_path: "微信读书/育儿/理解孩子的语言.md"
+raw_source_path: "微信读书笔记/育儿/理解孩子的语言.md"
 original_category: parenting
 subject_domains:
   - parenting
@@ -41,7 +41,7 @@ last_reviewed: 2026-03-16
 
 ## 原始来源说明
 
-- 微信读书导出文件：`微信读书/育儿/理解孩子的语言.md`
+- 微信读书笔记导出文件：`微信读书/育儿/理解孩子的语言.md`
 - 当前处理状态：已完成第二批主题：`行为与情绪是前语言表达 + 感受与细小选择怎样长出自我认同 + 共情式倾听/非语言接住/情绪陪伴步骤 + 有益挫折/愤怒边界/关系不断线`
 
 ## 已产出内容

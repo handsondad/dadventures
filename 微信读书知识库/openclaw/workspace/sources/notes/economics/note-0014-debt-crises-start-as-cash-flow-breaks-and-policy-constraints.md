@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0014
 source_book: book-0047
 source_section: 萧条阶段 / 和谐的去杠杆化 / 通胀性萧条和货币危机 / 小结
-raw_source_path: "微信读书/经济/债务危机.md"
+raw_source_path: "微信读书笔记/经济/债务危机.md"
 note_kind: theme_summary
 subject_domains:
   - economics

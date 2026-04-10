@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0020
 source_book: book-0047
 source_section: 小结 / 战时经济 / 马来西亚1981—1990年案例文本自动摘要
-raw_source_path: "微信读书/经济/债务危机.md"
+raw_source_path: "微信读书笔记/经济/债务危机.md"
 note_kind: theme_summary
 subject_domains:
   - economics

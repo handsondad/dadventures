@@ -6,7 +6,7 @@ title_zh: "工作消费主义和新穷人"
 author: 待补充
 translator:
 source_platform: weread
-raw_source_path: "微信读书/经济/工作消费主义和新穷人.md"
+raw_source_path: "微信读书笔记/经济/工作消费主义和新穷人.md"
 original_category: economics
 subject_domains:
   - economics
@@ -20,7 +20,7 @@ topic_tags:
   - immediate_gratification
   - credit_society
   - boredom
-note_count:
+note_count: 4
 notes_policy: summary_only
 copyright_note: Keep bibliographic facts, short locating snippets, and paraphrased summaries. Avoid long verbatim excerpts.
 status: active
@@ -47,7 +47,7 @@ last_reviewed: 2026-03-17
 
 ## 原始来源说明
 
-- 微信读书导出文件：`微信读书/经济/工作消费主义和新穷人.md`
+- 微信读书笔记导出文件：`微信读书/经济/工作消费主义和新穷人.md`
 - 当前处理状态：已开始拆解前两批 `工作伦理/消费者社会/新贫穷 + 即时满足/信用卡社会 + 消费美学/无聊分层` 主线
 
 ## 已产出内容

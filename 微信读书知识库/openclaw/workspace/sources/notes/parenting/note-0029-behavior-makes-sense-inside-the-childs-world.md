@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0029
 source_book: book-0054
 source_section: 要教育儿童，先要了解儿童 + 反映个体人格的三个关键问题 + 人格统一性是理解行为的指南针 + 从孩子的处境理解孩子的行为
-raw_source_path: "微信读书/育儿/儿童教育心理学.md"
+raw_source_path: "微信读书笔记/育儿/儿童教育心理学.md"
 note_kind: theme_summary
 subject_domains:
   - parenting

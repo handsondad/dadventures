@@ -6,7 +6,7 @@ title_zh: "许倬云说历史：现代文明的成坏"
 author: 许倬云
 translator:
 source_platform: weread
-raw_source_path: "微信读书/历史/许倬云说历史：现代文明的成坏.md"
+raw_source_path: "微信读书笔记/历史/许倬云说历史：现代文明的成坏.md"
 original_category: history
 subject_domains:
   - history
@@ -41,7 +41,7 @@ last_reviewed: 2026-03-16
 
 ## 原始来源说明
 
-- 微信读书导出文件：`微信读书/历史/许倬云说历史：现代文明的成坏.md`
+- 微信读书笔记导出文件：`微信读书/历史/许倬云说历史：现代文明的成坏.md`
 - 当前已处理范围：宗教革命与主权国家、近代资本主义动力、人权与民主政治、殖民掠夺、工业资源争夺、民族国家分化
 - 当前尚未处理：更完整的全球经济、信仰重建与现代价值体系收束部分
 

@@ -6,7 +6,7 @@ title_zh: "宝宝出生的奥秘"
 author: 琪琪・汉萨德
 translator:
 source_platform: weread
-raw_source_path: "微信读书/育儿/宝宝出生的奥秘.md"
+raw_source_path: "微信读书笔记/育儿/宝宝出生的奥秘.md"
 original_category: parenting
 subject_domains:
   - parenting
@@ -42,7 +42,7 @@ last_reviewed: 2026-03-16
 
 ## 原始来源说明
 
-- 微信读书导出文件：`微信读书/育儿/宝宝出生的奥秘.md`
+- 微信读书笔记导出文件：`微信读书/育儿/宝宝出生的奥秘.md`
 - 当前处理状态：已完成第二批主题：`分娩环境/身体本能/知情选择 + 出生第一小时/第四孕期/回应式依附 + 被倾听的分娩支持/内在力量 + 母亲脑变化/父亲通过照料进入角色`
 
 ## 已产出内容

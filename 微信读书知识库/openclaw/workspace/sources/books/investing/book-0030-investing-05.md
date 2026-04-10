@@ -6,7 +6,7 @@ title_zh: "投资中最重要的事"
 author: 霍华德·马克斯
 translator:
 source_platform: weread
-raw_source_path: "微信读书/投资/投资中最重要的事.md"
+raw_source_path: "微信读书笔记/投资/投资中最重要的事.md"
 original_category: investing
 subject_domains:
   - investing
@@ -41,7 +41,7 @@ last_reviewed: 2026-03-16
 
 ## 原始来源说明
 
-- 微信读书导出文件：`微信读书/投资/投资中最重要的事.md`
+- 微信读书笔记导出文件：`微信读书/投资/投资中最重要的事.md`
 - 当前处理状态：已完成首批主题：`价值优先于价格与买得好 + 永久损失风险、安全边际与防守`
 
 ## 已产出内容

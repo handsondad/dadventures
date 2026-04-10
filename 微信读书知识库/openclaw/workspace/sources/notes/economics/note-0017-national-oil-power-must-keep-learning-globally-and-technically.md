@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0017
 source_book: book-0051
 source_section: 十 多元化的全球扩张
-raw_source_path: "微信读书/经济/沙特公司.md"
+raw_source_path: "微信读书笔记/经济/沙特公司.md"
 note_kind: theme_summary
 subject_domains:
   - economics

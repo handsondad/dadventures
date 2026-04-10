@@ -6,7 +6,7 @@ title_zh: "德国简史"
 author: 孟钟捷
 translator:
 source_platform: weread
-raw_source_path: "微信读书/历史/德国简史.md"
+raw_source_path: "微信读书笔记/历史/德国简史.md"
 original_category: history
 subject_domains:
   - history
@@ -40,7 +40,7 @@ last_reviewed: 2026-03-16
 
 ## 原始来源说明
 
-- 微信读书导出文件：`微信读书/历史/德国简史.md`
+- 微信读书笔记导出文件：`微信读书/历史/德国简史.md`
 - 当前处理状态：已进入 `active`，完成首批主题拆解
 
 ## 已产出内容

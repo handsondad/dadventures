@@ -6,7 +6,7 @@ title_zh: "买入银行股"
 author: 丁昶
 translator:
 source_platform: weread
-raw_source_path: "微信读书/投资/买入银行股.md"
+raw_source_path: "微信读书笔记/投资/买入银行股.md"
 original_category: investing
 subject_domains:
   - investing
@@ -41,7 +41,7 @@ last_reviewed: 2026-03-16
 
 ## 原始来源说明
 
-- 微信读书导出文件：`微信读书/投资/买入银行股.md`
+- 微信读书笔记导出文件：`微信读书/投资/买入银行股.md`
 - 当前处理状态：已完成两批主题：`银行股不能按普通行业股研究 + 低成本资金和系统重要性才是银行的核心优势`，以及 `政府信用/税赋权是金融体系更深的信用底座 + 银行与地产更适合按资产负债表传导链一起研究`
 
 ## 已产出内容

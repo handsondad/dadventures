@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0063
 source_book: book-0059
 source_section: 前言 + 第1章 遇见孩子，遇见更好的自己
-raw_source_path: "微信读书/育儿/遇见孩子遇见更好的自己.md"
+raw_source_path: "微信读书笔记/育儿/遇见孩子遇见更好的自己.md"
 note_kind: theme_summary
 subject_domains:
   - parenting

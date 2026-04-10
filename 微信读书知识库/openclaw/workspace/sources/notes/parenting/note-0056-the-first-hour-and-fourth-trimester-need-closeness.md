@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0056
 source_book: book-0057
 source_section: 2 生理分娩 + 5 成为母亲 + 6 作为导乐师教会了我什么
-raw_source_path: "微信读书/育儿/宝宝出生的奥秘.md"
+raw_source_path: "微信读书笔记/育儿/宝宝出生的奥秘.md"
 note_kind: theme_summary
 subject_domains:
   - parenting

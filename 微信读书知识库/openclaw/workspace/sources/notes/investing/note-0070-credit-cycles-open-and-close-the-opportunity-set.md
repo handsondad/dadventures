@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0070
 source_book: book-0027
 source_section: 09 信贷周期
-raw_source_path: "微信读书/投资/周期.md"
+raw_source_path: "微信读书笔记/投资/周期.md"
 note_kind: theme_summary
 subject_domains:
   - investing

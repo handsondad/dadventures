@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0032
 source_book: book-0054
 source_section: 母亲和祖父母角色的重要性 + 语言能力与儿童的社会情感密切相关 + 老人不得干预父母的教育
-raw_source_path: "微信读书/育儿/儿童教育心理学.md"
+raw_source_path: "微信读书笔记/育儿/儿童教育心理学.md"
 note_kind: theme_summary
 subject_domains:
   - parenting

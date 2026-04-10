@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0083
 source_book: book-0026
 source_section: 政府的信用 + 政府的税赋权价值
-raw_source_path: "微信读书/投资/买入银行股.md"
+raw_source_path: "微信读书笔记/投资/买入银行股.md"
 note_kind: theme_summary
 subject_domains:
   - investing

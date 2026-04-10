@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0012
 source_book: book-0049
 source_section: 第七章 单身人士的未来
-raw_source_path: "微信读书/经济/单身社会.md"
+raw_source_path: "微信读书笔记/经济/单身社会.md"
 note_kind: theme_summary
 subject_domains:
   - economics

@@ -6,7 +6,7 @@ title_zh: "旧制度与大革命"
 author: 待补充
 translator:
 source_platform: weread
-raw_source_path: "微信读书/政治/旧制度与大革命.md"
+raw_source_path: "微信读书笔记/政治/旧制度与大革命.md"
 original_category: politics
 subject_domains:
   - politics
@@ -45,7 +45,7 @@ last_reviewed: 2026-03-17
 
 ## 原始来源说明
 
-- 微信读书导出文件：`微信读书/政治/旧制度与大革命.md`
+- 微信读书笔记导出文件：`微信读书/政治/旧制度与大革命.md`
 - 当前已处理范围：旧制度中央集权深入、立法权与管理权区分、特权与责任脱钩、自由习惯、社会碎裂、文人政治教育、改革优先于自由、繁荣为何更快抬高革命压力
 - 当前尚未处理：人民革命教育的具体做法、革命完成后的延续机制、末尾对法兰西民族性的总结
 

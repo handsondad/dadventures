@@ -6,7 +6,7 @@ title_zh: "股市长线法宝"
 author: 杰里米J.西格尔
 translator:
 source_platform: weread
-raw_source_path: "微信读书/投资/股市长线法宝.md"
+raw_source_path: "微信读书笔记/投资/股市长线法宝.md"
 original_category: investing
 subject_domains:
   - investing
@@ -41,7 +41,7 @@ last_reviewed: 2026-03-16
 
 ## 原始来源说明
 
-- 微信读书导出文件：`微信读书/投资/股市长线法宝.md`
+- 微信读书笔记导出文件：`微信读书/投资/股市长线法宝.md`
 - 当前处理状态：已完成首批主题：`长期风险要看购买力 + 成长与价值本质上是定价关系`
 
 ## 已产出内容

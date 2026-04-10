@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0010
 source_book: book-0003
 source_section: 第二节 + 第三节 + 第七节 + 第八节
-raw_source_path: "微信读书/人体/医生你在想什么.md"
+raw_source_path: "微信读书笔记/人体/医生你在想什么.md"
 note_kind: theme_summary
 subject_domains:
   - human_body

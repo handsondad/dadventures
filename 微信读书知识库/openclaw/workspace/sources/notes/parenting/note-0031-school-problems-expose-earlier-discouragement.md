@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0031
 source_book: book-0054
 source_section: 儿童成为学校差生的心理成因 + 孩子对学校的态度很重要
-raw_source_path: "微信读书/育儿/儿童教育心理学.md"
+raw_source_path: "微信读书笔记/育儿/儿童教育心理学.md"
 note_kind: theme_summary
 subject_domains:
   - parenting

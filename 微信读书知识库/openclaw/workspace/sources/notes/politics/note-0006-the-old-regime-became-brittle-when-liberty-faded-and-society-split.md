@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0006
 source_book: book-0035
 source_section: 第十五章 如此相似的人为何比以往更有距离，形成许多小团体，彼此漠不关心 + 第十六章 政治自由的丧失和各阶级间的分裂是如何导致旧制度灭亡的 + 第十七章 旧制度下自由的类别及其对大革命的影响 + 第二十一章 法国人为什么先要改革，后要自由 + 第二十二章 路易十六统治时期是旧君主制最繁荣的时期，为什么繁荣反而加速了大革命的到来
-raw_source_path: "微信读书/政治/旧制度与大革命.md"
+raw_source_path: "微信读书笔记/政治/旧制度与大革命.md"
 note_kind: theme_summary
 subject_domains:
   - politics

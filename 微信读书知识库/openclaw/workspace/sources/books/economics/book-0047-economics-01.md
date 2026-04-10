@@ -6,7 +6,7 @@ title_zh: "债务危机"
 author: 待补充
 translator:
 source_platform: weread
-raw_source_path: "微信读书/经济/债务危机.md"
+raw_source_path: "微信读书笔记/经济/债务危机.md"
 original_category: economics
 subject_domains:
   - economics
@@ -17,7 +17,7 @@ topic_tags:
   - cash_flow
   - currency_regime
   - bubbles
-note_count:
+note_count: 4
 notes_policy: summary_only
 copyright_note: Keep bibliographic facts, short locating snippets, and paraphrased summaries. Avoid long verbatim excerpts.
 status: active
@@ -42,7 +42,7 @@ last_reviewed: 2026-03-17
 
 ## 原始来源说明
 
-- 微信读书导出文件：`微信读书/经济/债务危机.md`
+- 微信读书笔记导出文件：`微信读书/经济/债务危机.md`
 - 当前处理状态：已开始拆解第一批 `信贷周期 + 现金流危机/去杠杆约束` 主线
 
 ## 已产出内容
@@ -51,10 +51,19 @@ last_reviewed: 2026-03-17
 - `note-0014`: 债务危机先爆在现金流上，处理难度取决于去杠杆方式和本币/外币约束
 - `concept-0013`: 信贷最重要的作用，是把未来需求提前到现在，并放大周期
 - `concept-0014`: 债务危机真正的约束，在现金流断点、损失分摊和币种空间
+- `concept-0019`: 货币危机会在名义财富不再像财富时爆发
+- `concept-0020`: 外部融资收缩会把政策压进紧缩与贬值两难
+- `concept-0021`: 宏观韧性取决于信任、融资、现金引擎和治理承接的联动
 - `action-0007`: 读债务危机时，沿着 `信贷用途/现金流断点/币种约束` 这条线看
+- `action-0010`: 读债务危机第二层时，沿着 `名义信任/购买力/外部融资` 这条线看
+- `action-0011`: 跨书判断韧性时，用 `信任/融资/现金引擎/治理承接` 四格诊断
 - `collection-0007`: 债务系统在繁荣时前置需求，在危机时暴露去杠杆和政策约束
+- `collection-0010`: 货币信任与外部融资共同决定危机如何升级
+- `collection-0011`: 《债务危机》与《沙特公司》的跨书韧性整合包
 - `idea-0007`: 债务周期里最危险的时候，往往是信心最高的时候
+- `idea-0010`: 名义信任与外部融资同时收缩时，危机会显著变硬
+- `idea-0011`: 危机结局取决于时间是否被转成持续能力
 
 ## 备注
 
-- 当前已把 `信贷如何前置需求 + 债务危机如何先爆在现金流上` 第一批主线接上；后续如果继续补，更适合转向 `通胀性萧条/货币危机` 与 `国际收支危机/资本流动处理`。
+- 当前已把《债务危机》推进到第二层，并与《沙特公司》完成一轮宏观整合：`信贷前置需求 -> 现金流断裂 -> 名义信任与外部融资约束 -> 融资空间与能力承接联动`。

@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0059
 source_book: book-0058
 source_section: 1 成熟的心智 + 2 相信自己 + 第二章 七个需要牢记的问题
-raw_source_path: "微信读书/育儿/理解孩子的语言.md"
+raw_source_path: "微信读书笔记/育儿/理解孩子的语言.md"
 note_kind: theme_summary
 subject_domains:
   - parenting

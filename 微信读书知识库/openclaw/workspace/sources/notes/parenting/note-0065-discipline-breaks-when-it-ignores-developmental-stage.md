@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0065
 source_book: book-0060
 source_section: 前言 洞察“魔法师”的精神生活 + 05 认识现实世界
-raw_source_path: "微信读书/育儿/魔法岁月：0~6岁孩子的精神世界.md"
+raw_source_path: "微信读书笔记/育儿/魔法岁月：0~6岁孩子的精神世界.md"
 note_kind: theme_summary
 subject_domains:
   - parenting

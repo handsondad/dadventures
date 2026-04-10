@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0002
 source_book: book-0001
 source_section: DNA 双螺旋、碱基配对、半保留复制、密码子相关笔记
-raw_source_path: "微信读书/人体/上帝的手术刀：基因编辑简史.md"
+raw_source_path: "微信读书笔记/人体/上帝的手术刀：基因编辑简史.md"
 note_kind: theme_summary
 subject_domains:
   - human_body

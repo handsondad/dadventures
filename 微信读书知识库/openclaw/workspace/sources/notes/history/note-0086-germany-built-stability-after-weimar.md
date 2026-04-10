@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0086
 source_book: book-0015
 source_section: 第七章 充满张力的民族国家 + 第八章 昙花一现的民主 + 德意志联邦共和国
-raw_source_path: "微信读书/历史/德国简史.md"
+raw_source_path: "微信读书笔记/历史/德国简史.md"
 note_kind: theme_summary
 subject_domains:
   - history

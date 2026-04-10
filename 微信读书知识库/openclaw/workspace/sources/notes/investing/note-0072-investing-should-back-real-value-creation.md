@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0072
 source_book: book-0028
 source_section: 钱、工作、投资 + 五年的实证，告诉了我们什么
-raw_source_path: "微信读书/投资/投资中我相信的事.md"
+raw_source_path: "微信读书笔记/投资/投资中我相信的事.md"
 note_kind: theme_summary
 subject_domains:
   - investing

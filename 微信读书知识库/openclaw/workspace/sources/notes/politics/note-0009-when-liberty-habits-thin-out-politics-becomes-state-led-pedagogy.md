@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0009
 source_book: book-0035
 source_section: 第十九章 十八世纪中期文人变成国家政治领袖的原因及其影响 + 第二十一章 法国人为什么先要改革，后要自由
-raw_source_path: "微信读书/政治/旧制度与大革命.md"
+raw_source_path: "微信读书笔记/政治/旧制度与大革命.md"
 note_kind: theme_summary
 subject_domains:
   - politics

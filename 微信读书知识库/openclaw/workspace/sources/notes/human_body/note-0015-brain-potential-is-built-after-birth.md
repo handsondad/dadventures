@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0015
 source_book: book-0004
 source_section: 第4章 大脑袋不一定有大智慧
-raw_source_path: "微信读书/人体/疯狂人体进化史.md"
+raw_source_path: "微信读书笔记/人体/疯狂人体进化史.md"
 note_kind: theme_summary
 subject_domains:
   - human_body

@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0020
 source_book: book-0002
 source_section: 第二十一章 癌症：你每天都有5次得癌症的机会 + 第二十三章 衰老和死亡：选择生活方式，就是选择死亡方式
-raw_source_path: "微信读书/人体/人体简史.md"
+raw_source_path: "微信读书笔记/人体/人体简史.md"
 note_kind: theme_summary
 subject_domains:
   - human_body

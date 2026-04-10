@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0076
 source_book: book-0030
 source_section: 推荐序1 + 04 价格与价值的关系
-raw_source_path: "微信读书/投资/投资中最重要的事.md"
+raw_source_path: "微信读书笔记/投资/投资中最重要的事.md"
 note_kind: theme_summary
 subject_domains:
   - investing

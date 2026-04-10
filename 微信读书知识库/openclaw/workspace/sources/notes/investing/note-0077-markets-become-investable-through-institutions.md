@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0077
 source_book: book-0031
 source_section: 新的时代 + 王侯将相，宁有种乎？
-raw_source_path: "微信读书/投资/文明资本和投资.md"
+raw_source_path: "微信读书笔记/投资/文明资本和投资.md"
 note_kind: theme_summary
 subject_domains:
   - investing

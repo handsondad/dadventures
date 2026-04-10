@@ -1,14 +1,12 @@
 # TOOLS.md - 本地知识库说明
 
-这里记录的是这套微信读书知识库的本地结构和使用约定。
+这里记录的是这套微信读书笔记知识库的本地结构和使用约定。
 
 ## 关键路径
 
 - 知识库根目录：当前目录
-- 配置入口：`../openclaw.json`
 - 配置包说明：`../README.md`
 - 总览入口：`../../README.md`
-- OpenClaw 接入说明：`../OPENCLAW_INTEGRATION.md`
 - 想法捕捉工作流：`IDEA_CAPTURE_WORKFLOW.md`
 - 受控词表：`taxonomy/taxonomy.md`
 
@@ -26,7 +24,7 @@
 ## 写回约定
 
 - 新的原始内容先落到 `sources/books/` 和 `sources/notes/`
-- 需要 OpenClaw 直读原始文本时，把工作副本放入 `sources/raw/`
+- 需要 Agent 直读原始文本时，把工作副本放入 `sources/raw/`
 - 再创建对应的 `concept_card` 或 `action_card`
 - 再围绕场景或问题整理 `collection` 主题包
 - 最后在 `ideas/` 下沉淀 `idea_seed`

@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0028
 source_book: book-0053
 source_section: 妈妈是婴儿的镜子 + 父母不是孩子的答案 + 分离是生命中永恒的主题 + 宠爱自己——溺爱的心理真相 + 孩子有问题，大人先自省 + 孩子为何把网络当成“安全岛”
-raw_source_path: "微信读书/育儿/为何家会伤人.md"
+raw_source_path: "微信读书笔记/育儿/为何家会伤人.md"
 note_kind: theme_summary
 subject_domains:
   - parenting

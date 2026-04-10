@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0090
 source_book: book-0018
 source_section: 07 中国语文独特之处 ——数词和量词 + 08 中文文法的内在简约性 + 09 中文文法没有明确的时态变化 + 10 中文文法影响中国人的思维方式 + 04 语言和文字，哪个更重要？ + 05 文字在中国拥有更高的权威 + 06 文献中心主义 + 07 历史记录的“大传统”和“小传统”
-raw_source_path: "微信读书/历史/讲给大家的中国历史02.md"
+raw_source_path: "微信读书笔记/历史/讲给大家的中国历史02.md"
 note_kind: theme_summary
 subject_domains:
   - history

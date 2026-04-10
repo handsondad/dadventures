@@ -6,7 +6,7 @@ title_zh: "身体的秘密"
 author: 丹尼尔·M.戴维斯
 translator:
 source_platform: weread
-raw_source_path: "微信读书/人体/身体的秘密.md"
+raw_source_path: "微信读书笔记/人体/身体的秘密.md"
 original_category: human_body
 subject_domains:
   - human_body
@@ -41,7 +41,7 @@ last_reviewed: 2026-03-17
 
 ## 原始来源说明
 
-- 微信读书导出文件：`微信读书/人体/身体的秘密.md`
+- 微信读书笔记导出文件：`微信读书/人体/身体的秘密.md`
 - 当前处理状态：已完成前两批主题，后续可继续补总体代码与系统生物学
 
 ## 已产出内容

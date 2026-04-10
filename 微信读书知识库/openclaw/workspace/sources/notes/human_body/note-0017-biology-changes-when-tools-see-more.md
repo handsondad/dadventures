@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0017
 source_book: book-0005
 source_section: 前言 + 第一章 + 第六章
-raw_source_path: "微信读书/人体/身体的秘密.md"
+raw_source_path: "微信读书笔记/人体/身体的秘密.md"
 note_kind: theme_summary
 subject_domains:
   - human_body

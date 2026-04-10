@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0002
 source_book: book-0037
 source_section: 第五节 招商引资 + 第二章 财税与政府行为 + 第三章 政府投融资与债务 + 第五章 城市化与不平衡
-raw_source_path: "微信读书/政治/置身事内：中国政府与经济发展.md"
+raw_source_path: "微信读书笔记/政治/置身事内：中国政府与经济发展.md"
 note_kind: theme_summary
 subject_domains:
   - politics

@@ -6,7 +6,7 @@ title_zh: "医生你在想什么"
 author: 王兴
 translator:
 source_platform: weread
-raw_source_path: "微信读书/人体/医生你在想什么.md"
+raw_source_path: "微信读书笔记/人体/医生你在想什么.md"
 original_category: human_body
 subject_domains:
   - human_body
@@ -43,8 +43,8 @@ last_reviewed: 2026-03-16
 
 ## 原始来源说明
 
-- 微信读书导出文件：`微信读书/人体/医生你在想什么.md`
-- 当前处理状态：已建立 `source_book`，待继续拆解
+- 微信读书笔记导出文件：`微信读书/人体/医生你在想什么.md`
+- 当前处理状态：已完成第二批主题加厚，当前更适合用于与 system-level 医疗主题做跨书对照
 
 ## 已产出内容
 

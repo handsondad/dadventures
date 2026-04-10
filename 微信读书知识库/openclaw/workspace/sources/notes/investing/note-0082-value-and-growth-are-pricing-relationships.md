@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0082
 source_book: book-0033
 source_section: 折现现金流 + 成长型股票与价值型股票的本质
-raw_source_path: "微信读书/投资/股市长线法宝.md"
+raw_source_path: "微信读书笔记/投资/股市长线法宝.md"
 note_kind: theme_summary
 subject_domains:
   - investing

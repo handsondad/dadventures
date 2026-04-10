@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0092
 source_book: book-0016
 source_section: 45 阿拉伯起义，贝尔福宣言 公元1916年—公元1917年 + 46 圣诞礼物 公元1917年—公元1919年 + 49 阿拉伯起义 公元1936年—公元1945年 + 明天
-raw_source_path: "微信读书/历史/耶路撒冷三千年.md"
+raw_source_path: "微信读书笔记/历史/耶路撒冷三千年.md"
 note_kind: theme_summary
 subject_domains:
   - history

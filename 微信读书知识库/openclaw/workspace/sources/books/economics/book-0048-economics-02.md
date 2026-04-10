@@ -6,7 +6,7 @@ title_zh: "制造消费者：消费主义全球史"
 author: 待补充
 translator:
 source_platform: weread
-raw_source_path: "微信读书/经济/制造消费者：消费主义全球史.md"
+raw_source_path: "微信读书笔记/经济/制造消费者：消费主义全球史.md"
 original_category: economics
 subject_domains:
   - economics
@@ -19,7 +19,7 @@ topic_tags:
   - symbolic_value
   - status_consumption
   - taste_politics
-note_count:
+note_count: 4
 notes_policy: summary_only
 copyright_note: Keep bibliographic facts, short locating snippets, and paraphrased summaries. Avoid long verbatim excerpts.
 status: active
@@ -45,7 +45,7 @@ last_reviewed: 2026-03-17
 
 ## 原始来源说明
 
-- 微信读书导出文件：`微信读书/经济/制造消费者：消费主义全球史.md`
+- 微信读书笔记导出文件：`微信读书/经济/制造消费者：消费主义全球史.md`
 - 当前处理状态：已开始拆解前两批 `商品拜物/品牌 + 百货商店/欲望制度化 + 地位消费/品味政治/同与不同` 主线
 
 ## 已产出内容

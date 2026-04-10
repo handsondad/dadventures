@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0009
 source_book: book-0049
 source_section: 第一章 我们为什么不再憧憬婚姻？ / 第五章 后物质主义价值观与单身
-raw_source_path: "微信读书/经济/单身社会.md"
+raw_source_path: "微信读书笔记/经济/单身社会.md"
 note_kind: theme_summary
 subject_domains:
   - economics

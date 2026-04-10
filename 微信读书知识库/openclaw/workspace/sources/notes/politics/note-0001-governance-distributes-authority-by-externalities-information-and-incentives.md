@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0001
 source_book: book-0037
 source_section: 第一节 政府治理的特点 + 第二节 外部性与规模经济 + 第三节 复杂信息 + 第四节 激励相容
-raw_source_path: "微信读书/政治/置身事内：中国政府与经济发展.md"
+raw_source_path: "微信读书笔记/政治/置身事内：中国政府与经济发展.md"
 note_kind: theme_summary
 subject_domains:
   - politics

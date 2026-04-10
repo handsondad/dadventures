@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0093
 source_book: book-0019
 source_section: 第四章 欧洲启蒙运动的来龙去脉 + 第五章 宗教革命开启了近代西方民主社会 + 第六章 近代资本主义发展的动力和基础
-raw_source_path: "微信读书/历史/许倬云说历史：现代文明的成坏.md"
+raw_source_path: "微信读书笔记/历史/许倬云说历史：现代文明的成坏.md"
 note_kind: theme_summary
 subject_domains:
   - history

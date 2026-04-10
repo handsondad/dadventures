@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0005
 source_book: book-0002
 source_section: 第一章 制造一个人要花多少钱
-raw_source_path: "微信读书/人体/人体简史.md"
+raw_source_path: "微信读书笔记/人体/人体简史.md"
 note_kind: theme_summary
 subject_domains:
   - human_body

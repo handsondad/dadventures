@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0039
 source_book: book-0055
 source_section: 孩子生来就知道的事 + 探索事物分类：透过表面审视内在
-raw_source_path: "微信读书/育儿/孩子如何学习.md"
+raw_source_path: "微信读书笔记/育儿/孩子如何学习.md"
 note_kind: theme_summary
 subject_domains:
   - parenting

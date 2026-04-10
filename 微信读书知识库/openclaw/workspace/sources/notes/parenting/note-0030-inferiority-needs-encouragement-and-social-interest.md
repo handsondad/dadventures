@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0030
 source_book: book-0054
 source_section: 每个儿童都有与生俱来的自卑感 + 社会情感是衡量儿童心理发展的晴雨表 + 如何正确引导儿童追求优越感 + 嘲讽式教育只会让孩子更自卑 + 语言能力与儿童的社会情感密切相关
-raw_source_path: "微信读书/育儿/儿童教育心理学.md"
+raw_source_path: "微信读书笔记/育儿/儿童教育心理学.md"
 note_kind: theme_summary
 subject_domains:
   - parenting

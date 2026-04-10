@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0061
 source_book: book-0058
 source_section: 共情式的倾听 + 当孩子情绪激动时陪伴孩子的步骤
-raw_source_path: "微信读书/育儿/理解孩子的语言.md"
+raw_source_path: "微信读书笔记/育儿/理解孩子的语言.md"
 note_kind: theme_summary
 subject_domains:
   - parenting

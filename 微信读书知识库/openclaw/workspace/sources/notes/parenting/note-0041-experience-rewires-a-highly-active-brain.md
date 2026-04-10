@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0041
 source_book: book-0055
 source_section: 学习：为自己重新编程 + 依据经验不断重新布线 + 让神经元充分连接：收到请回答
-raw_source_path: "微信读书/育儿/孩子如何学习.md"
+raw_source_path: "微信读书笔记/育儿/孩子如何学习.md"
 note_kind: theme_summary
 subject_domains:
   - parenting

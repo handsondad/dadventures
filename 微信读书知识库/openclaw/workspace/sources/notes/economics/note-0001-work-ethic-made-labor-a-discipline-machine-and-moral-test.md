@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0001
 source_book: book-0050
 source_section: 导言、第一章 工作的意义：创造工作伦理
-raw_source_path: "微信读书/经济/工作消费主义和新穷人.md"
+raw_source_path: "微信读书笔记/经济/工作消费主义和新穷人.md"
 note_kind: theme_summary
 subject_domains:
   - economics

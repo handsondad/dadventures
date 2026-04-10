@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0005
 source_book: book-0048
 source_section: 第三章 商品动力学：“同与不同”概念下的矩阵传播
-raw_source_path: "微信读书/经济/制造消费者：消费主义全球史.md"
+raw_source_path: "微信读书笔记/经济/制造消费者：消费主义全球史.md"
 note_kind: theme_summary
 subject_domains:
   - economics

@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0085
 source_book: book-0015
 source_section: 从东法兰克王国到德意志王国 + 三十年战争 + 文化民族主义运动 + 结语
-raw_source_path: "微信读书/历史/德国简史.md"
+raw_source_path: "微信读书笔记/历史/德国简史.md"
 note_kind: theme_summary
 subject_domains:
   - history

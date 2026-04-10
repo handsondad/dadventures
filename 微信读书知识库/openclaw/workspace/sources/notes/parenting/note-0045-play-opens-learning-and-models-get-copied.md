@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0045
 source_book: book-0056
 source_section: 03 享受此刻 + 07 激励孩子的行为
-raw_source_path: "微信读书/育儿/孩子的大脑.md"
+raw_source_path: "微信读书笔记/育儿/孩子的大脑.md"
 note_kind: theme_summary
 subject_domains:
   - parenting

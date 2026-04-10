@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0042
 source_book: book-0055
 source_section: 学习：为自己重新编程 + 天边一朵荣耀之云
-raw_source_path: "微信读书/育儿/孩子如何学习.md"
+raw_source_path: "微信读书笔记/育儿/孩子如何学习.md"
 note_kind: theme_summary
 subject_domains:
   - parenting

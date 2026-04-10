@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0066
 source_book: book-0060
 source_section: 控制冲动的咒语诞生 + 05 认识现实世界 + 理解但不纵容
-raw_source_path: "微信读书/育儿/魔法岁月：0~6岁孩子的精神世界.md"
+raw_source_path: "微信读书笔记/育儿/魔法岁月：0~6岁孩子的精神世界.md"
 note_kind: theme_summary
 subject_domains:
   - parenting

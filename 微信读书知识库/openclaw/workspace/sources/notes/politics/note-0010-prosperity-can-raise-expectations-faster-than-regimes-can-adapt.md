@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0010
 source_book: book-0035
 source_section: 第一章 + 第二十二章 路易十六统治时期是旧君主制最繁荣的时期，为什么繁荣反而加速了大革命的到来
-raw_source_path: "微信读书/政治/旧制度与大革命.md"
+raw_source_path: "微信读书笔记/政治/旧制度与大革命.md"
 note_kind: theme_summary
 subject_domains:
   - politics

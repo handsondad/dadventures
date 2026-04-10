@@ -6,7 +6,7 @@ title_zh: "孩子的大脑"
 author: 阿尔瓦罗·毕尔巴鄂
 translator:
 source_platform: weread
-raw_source_path: "微信读书/育儿/孩子的大脑.md"
+raw_source_path: "微信读书笔记/育儿/孩子的大脑.md"
 original_category: parenting
 subject_domains:
   - parenting
@@ -42,7 +42,7 @@ last_reviewed: 2026-03-16
 
 ## 原始来源说明
 
-- 微信读书导出文件：`微信读书/育儿/孩子的大脑.md`
+- 微信读书笔记导出文件：`微信读书/育儿/孩子的大脑.md`
 - 当前处理状态：已进入第六批深度拆解
 
 ## 已产出内容

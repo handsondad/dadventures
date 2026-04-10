@@ -6,7 +6,7 @@ title_zh: "0-6岁抓住孩子的语言关键期"
 author: 玛格丽特·麦克莱根 安妮·巴克利
 translator:
 source_platform: weread
-raw_source_path: "微信读书/育儿/0-6岁抓住孩子的语言关键期.md"
+raw_source_path: "微信读书笔记/育儿/0-6岁抓住孩子的语言关键期.md"
 original_category: parenting
 subject_domains:
   - parenting
@@ -39,8 +39,8 @@ last_reviewed: 2026-03-16
 
 ## 原始来源说明
 
-- 微信读书导出文件：`微信读书/育儿/0-6岁抓住孩子的语言关键期.md`
-- 当前处理状态：已建立 `source_book`，待继续拆解
+- 微信读书笔记导出文件：`微信读书/育儿/0-6岁抓住孩子的语言关键期.md`
+- 当前处理状态：已完成前四批深度拆解
 
 ## 已产出内容
 

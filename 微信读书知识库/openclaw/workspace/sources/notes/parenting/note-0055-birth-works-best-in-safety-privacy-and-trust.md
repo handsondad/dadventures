@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0055
 source_book: book-0057
 source_section: 1-3 分娩准备 + 生理分娩 + 规范分娩
-raw_source_path: "微信读书/育儿/宝宝出生的奥秘.md"
+raw_source_path: "微信读书笔记/育儿/宝宝出生的奥秘.md"
 note_kind: theme_summary
 subject_domains:
   - parenting

@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0083
 source_book: book-0014
 source_section: 第三章 光荣崛起的荆棘路
-raw_source_path: "微信读书/历史/写给青少年的极简法国史.md"
+raw_source_path: "微信读书笔记/历史/写给青少年的极简法国史.md"
 note_kind: theme_summary
 subject_domains:
   - history

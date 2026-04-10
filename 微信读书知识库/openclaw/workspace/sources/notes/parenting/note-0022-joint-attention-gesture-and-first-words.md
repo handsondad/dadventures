@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0022
 source_book: book-0052
 source_section: 7.宝宝开始说话了吗6个月至1岁 + 8.有了！第一个词1岁至1岁半 + 9.思考、游戏和语言出生至3岁以上
-raw_source_path: "微信读书/育儿/0-6岁抓住孩子的语言关键期.md"
+raw_source_path: "微信读书笔记/育儿/0-6岁抓住孩子的语言关键期.md"
 note_kind: theme_summary
 subject_domains:
   - parenting

@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0080
 source_book: book-0032
 source_section: 1.1 低门槛与高壁垒
-raw_source_path: "微信读书/投资/股市进阶之道.md"
+raw_source_path: "微信读书笔记/投资/股市进阶之道.md"
 note_kind: theme_summary
 subject_domains:
   - investing

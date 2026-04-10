@@ -3,7 +3,7 @@ doc_type: source_note
 id: note-0081
 source_book: book-0033
 source_section: 风险的标准测度 + 有效边界5
-raw_source_path: "微信读书/投资/股市长线法宝.md"
+raw_source_path: "微信读书笔记/投资/股市长线法宝.md"
 note_kind: theme_summary
 subject_domains:
   - investing

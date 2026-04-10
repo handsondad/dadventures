@@ -6,7 +6,7 @@ title_zh: "沙特公司"
 author: 待补充
 translator:
 source_platform: weread
-raw_source_path: "微信读书/经济/沙特公司.md"
+raw_source_path: "微信读书笔记/经济/沙特公司.md"
 original_category: economics
 subject_domains:
   - economics
@@ -19,7 +19,7 @@ topic_tags:
   - modernization
   - technology_adaptation
   - governance_carrier
-note_count:
+note_count: 4
 notes_policy: summary_only
 copyright_note: Keep bibliographic facts, short locating snippets, and paraphrased summaries. Avoid long verbatim excerpts.
 status: active
@@ -46,7 +46,7 @@ last_reviewed: 2026-03-17
 
 ## 原始来源说明
 
-- 微信读书导出文件：`微信读书/经济/沙特公司.md`
+- 微信读书笔记导出文件：`微信读书/经济/沙特公司.md`
 - 当前处理状态：已开始拆解前两批 `资源国家共生形成 + 租金规则/能力转移 + 系统升级/治理承载` 主线
 
 ## 已产出内容
@@ -65,7 +65,12 @@ last_reviewed: 2026-03-17
 - `action-0009`: 读资源国家第二层时，沿着 `系统升级/技术学习/治理承载` 这条线看
 - `collection-0009`: 资源国家长期力量来自会升级的系统和能承接收益的治理结构
 - `idea-0009`: 资源国家真正的长期力量，是升级能力和承载能力的组合
+- `note-0021`: 与《债务危机》跨书整合，讨论融资空间与能力承接如何共同决定宏观韧性
+- `concept-0021`: 宏观韧性要同时满足信任、融资、现金引擎和治理承接
+- `action-0011`: 用四格诊断法跨书判断系统韧性
+- `collection-0011`: 《债务危机》×《沙特公司》宏观韧性整合包
+- `idea-0011`: 仅借到时间不足以稳定系统，关键是能否把时间转成能力
 
 ## 备注
 
-- 当前已把 `资源如何被组织成国家能力 + 控制权如何通过规则和能力吸收推进 + 系统升级/治理承载` 两批主线接上；后续如果继续补，更适合回头压 `资源国家的全球战略位置` 与 `更外用的治理表达`。
+- 当前已把 `资源如何被组织成国家能力 + 控制权如何通过规则和能力吸收推进 + 系统升级/治理承载` 两批主线接上，并完成与《债务危机》的宏观韧性整合；后续更适合补 `资源国家的全球战略位置` 与 `更外用的治理表达`。
