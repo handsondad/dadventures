@@ -1,0 +1,62 @@
+{
+  "bookId": "MP_WXS_3201788143",
+  "title": "PaperWeekly",
+  "author": "公众号",
+  "reviewCount": 6,
+  "reviews": [
+    {
+      "reviewId": "89242604_84dtjWyg4",
+      "content": "讲得好！SFT 与 RL 的关系，可以统一在同一个数学框架下。前者最小化的是正向 KL 散度（forward KL），意味着模型要“覆盖”目标分布的全部区域；后者最小化的是反向 KL 散度（reverse KL），则倾向“选择”目标分布中最可能的那部分。",
+      "abstract": "2.1 从 KL 出发：两种截然不同的学习方向\nSFT 与 RL 的关系，可以统一在同一个数学框架下。前者最小化的是正向 KL 散度（forward KL），意味着模型要“覆盖”目标分布的全部区域；后者最小化的是反向 KL 散度（reverse KL），则倾向“选择”目标分布中最可能的那部分。\n\n\n\n",
+      "chapterName": "",
+      "range": "1350-1501",
+      "chapterUid": 665899554,
+      "createTime": 1761572569
+    },
+    {
+      "reviewId": "89242604_83HCUIZeG",
+      "content": "自注意力的两难",
+      "abstract": "\nTransformer 靠全局注意力拿到了强表征，但代价很直白：prefill 对上下文长度 T 的开销近似二次增长；生成阶段里 KV/状态的带宽与容量成了吞吐上限。上下文从 2k 拉到 8k、16k，这笔“长度税”会按平方级往上跳。",
+      "chapterName": "",
+      "range": "568-686",
+      "chapterUid": 1586012311,
+      "createTime": 1759763750
+    },
+    {
+      "reviewId": "89242604_7XQWE73Da",
+      "content": "MoE 替换的是 Transformer模型中 MLP 层",
+      "abstract": "我们知道，Transformer 模型由 Attention 层和 MLP 层组成，MoE 替换的是模型中 MLP 层。MLP 层又分 FFN（FeedForward Network）和 GLU（Gated Linear Unit）两种",
+      "chapterName": "",
+      "range": "635-753",
+      "chapterUid": 2124274544,
+      "createTime": 1739163342
+    },
+    {
+      "reviewId": "89242604_7UzGVipGy",
+      "content": "关于LLM那些方面过热，非常有启发，尤其是，第三点可能比较莫名其妙，不过我先抛出来，以后我们再看对不对：就是我认为未来的程序代码是单个文件的（Single-File System）而不是像现在文件夹里套文件夹，一个项目几百个文件。Framework 这种太重了，把一个简单的项目分散到很多很多个文件，不符合单文件的未来。所以你看我们自己的很多模型讲究长文本（比如向量模型），和单文本智能（比如 Reader-LM）。其实也是朝着这个未来做点准备。",
+      "abstract": "PaperWeekly：最后问您一个问题：您觉得 AI 领域这些方向，哪些是过热的 (over-hyped) 哪些是还不够热的 (under-hyped)？\n肖涵：我觉得过热的是 LLM Framework，Orchestration 这套，比如 LangChain，LlamaIndex 这种。我不是说我不太看好这两个公司，而是我不看好这个方向。原因有三，模型迭代速度太快，所以最好学习模型的方法就是靠近模型层，而不是去通过一个高级抽象层去学模型。LangChain 和 LlamaIndex 这种就是高级抽象层。\n第二，Framework 这种东西很早就有，比如 PyTorch, Tensorflow，但是我觉得在大模型时代，大家学习抽象层的动力会明显下降。2022-2023 年还好，LLM 刚兴起，学一学熟悉熟悉 Prompt 感受感受 LLM 的潜力，没啥问题。但是随着模型的发展，很多大模型可以直接从自然语言生成高质量的代码，不需要你再学一个中间语言去过渡。\n就好比大家都知道 C 语言的执行效率高，但是又都懒得学，于是先 Python 写再用 Cython 完成从 Python 到 C 的翻译。如果 LLM 可以直接构造 Agent，Pipeline，甚至一步到位的给出代码，试问有多少人还愿意花精力去学一个中间层的糖水代码 (sugary syntax)？况且往往这种糖水代码本身的设计逻辑还不符合你的品味。反正我发现我自己 2024 年使用这种 Framework 的次数为 0，去年的时候好像使用过一两次吧，也不多。\n第三点可能比较莫名其妙，不过我先抛出来，以后我们再看对不对：就是我认为未来的程序代码是单个文件的（Single-File System）而不是像现在文件夹里套文件夹，一个项目几百个文件。Framework 这种太重了，把一个简单的项目分散到很多很多个文件，不符合单文件的未来。所以你看我们自己的很多模型讲究长文本（比如向量模型），和单文本智能（比如 Reader-LM）。其实也是朝着这个未来做点准备。",
+      "chapterName": "",
+      "range": "11804-12676",
+      "chapterUid": 1587826782,
+      "createTime": 1727618489
+    },
+    {
+      "reviewId": "89242604_7UzFG8sAd",
+      "content": "摘录，第一，你是真想创业当 Founder 还是想“Playing Founder”，什么叫 Playing Founder 呢？大家小时候都玩过过家家吧。我当爸爸你当妈妈，这就是\"Playing Dad/Mom\"，角色扮演，假的，玩的。",
+      "abstract": "PaperWeekly：那您对创业者有什么建议么？或者是准备去投身 AI 创业的？\n肖涵：这个我想说的可就太多了。首先我觉得有两点最宏观的需要创业者想清楚的。第一，你是真想创业当 Founder 还是想“Playing Founder”，什么叫 Playing Founder 呢？大家小时候都玩过过家家吧。我当爸爸你当妈妈，这就是\"Playing Dad/Mom\"，角色扮演，假的，玩的。\n有些人是享受这种“扮演”的感觉，并不是真的想当爸妈，也不是真的想当 Founder，这就是 Playing Founder。Playing Founder 的下场基本都是虎头蛇尾，干一两年就没动力继续了。那我觉得是一种浪费时间和自我欺骗。所以我觉得这个问题你在创业前一定要对着镜子好好问清楚自己",
+      "chapterName": "",
+      "range": "9984-10327",
+      "chapterUid": 1587826782,
+      "createTime": 1727617349
+    },
+    {
+      "reviewId": "89242604_7UzF9yRXT",
+      "content": "摘录，创业永远没有最好的时机，而且真正的创业者也从来不会抱怨环境。创业最好的时机是昨天，其次是今天。说的好！",
+      "abstract": "PaperWeekly：那您觉得现在是 AI 创业的最好时机么？\n肖涵：创业永远没有最好的时机，而且真正的创业者也从来不会抱怨环境。创业最好的时机是昨天，其次是今天。",
+      "chapterName": "",
+      "range": "11041-11124",
+      "chapterUid": 1587826782,
+      "createTime": 1727616868
+    }
+  ]
+}
