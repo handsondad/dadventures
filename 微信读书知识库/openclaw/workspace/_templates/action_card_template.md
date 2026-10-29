@@ -1,6 +1,7 @@
 ---
 doc_type: action_card
-id: action-0001
+schema_version: 2
+id: action-investing-0001
 title: fill_in_short_slug
 title_zh: 填写中文标题
 status: draft
@@ -27,9 +28,9 @@ effort: low
 time_horizon: immediate
 claim_basis: direct_book_note
 source_refs:
-  - note-0001
+  - note-investing-0001
 related_concepts:
-  - concept-0001
+  - concept-investing-0001
 aliases:
   - 填写另一个常见说法
 search_terms:

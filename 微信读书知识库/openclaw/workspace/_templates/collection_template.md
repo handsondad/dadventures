@@ -1,6 +1,7 @@
 ---
 doc_type: collection
-id: collection-0001
+schema_version: 2
+id: collection-investing-0001
 title: fill_in_short_slug
 title_zh: 填写专题名称
 status: draft
@@ -20,8 +21,8 @@ idea_sparks:
   - use_cycles_to_connect psychology and decision making
 collection_kind: topic_dossier
 included_cards:
-  - concept-0001
-  - action-0001
+  - concept-investing-0001
+  - action-investing-0001
 last_reviewed: 2026-03-13
 ---
 

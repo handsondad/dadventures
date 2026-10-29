@@ -12,7 +12,6 @@
 
 ## 内容目录
 
-- `sources/raw/`：当前加工中的原始导入素材
 - `sources/books/`：书目信息、原始来源路径和整理进度
 - `sources/notes/`：章节或主题摘要、问题簇摘要、引用线索和个人想法
 - `concepts/`：概念、原理、框架、规律
@@ -24,14 +23,16 @@
 ## 写回约定
 
 - 新的原始内容先落到 `sources/books/` 和 `sources/notes/`
-- 需要 Agent 直读原始文本时，把工作副本放入 `sources/raw/`
+- 原始数据保存在仓库根目录的 `.weread-sync/raw_notes/`；阅读用 Markdown 副本位于 `微信读书笔记/`。只在确有需要时复制当前工作副本，不重复长期归档整本内容
+- 对人工综合且没有单一本书来源的来源笔记，`source_book` 可标为 `manual_synthesis`，并在 `source_refs` 中列明实际来源
 - 再创建对应的 `concept_card` 或 `action_card`
 - 再围绕场景或问题整理 `collection` 主题包
 - 最后在 `ideas/` 下沉淀 `idea_seed`
-- 文件命名遵循 `book-0001-short-slug.md`、`note-0001-short-slug.md`、`concept-0001-short-slug.md`、`action-0001-short-slug.md`、`collection-0001-short-slug.md`、`idea-0001-short-slug.md`
+- 新文件 ID 与文件名使用 `类型-主题域-序号`，例如 `note-investing-0001-short-slug.md`，确保跨主题目录也可唯一引用
 - 文件状态只用 `draft`、`reviewed`、`published`
+- 新知识条目使用 `schema_version: 2`，写回后运行 `.weread-sync/scripts/validate_knowledge.py`
 
 ## 配置约定
 
-- 不修改原有主配置
-- 这套知识库的专用配置位于当前目录上一级
+- OpenClaw 工作区指向当前 `workspace/` 目录
+- 本仓库不假定机器级 OpenClaw 配置文件路径；不要把本机绝对路径写进知识内容

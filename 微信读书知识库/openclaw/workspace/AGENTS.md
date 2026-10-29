@@ -11,8 +11,8 @@
 4. `MEMORY.md`
 5. `../../README.md`
 6. `../README.md`
-8. `IDEA_CAPTURE_WORKFLOW.md`（当需要整理主题或沉淀想法卡时）
-9. `taxonomy/taxonomy.md`（当需要编写或修改知识文件时）
+7. `IDEA_CAPTURE_WORKFLOW.md`（当需要整理主题或沉淀想法卡时）
+8. `taxonomy/taxonomy.md`（当需要编写或修改知识文件时）
 
 ## 主要任务
 
@@ -65,7 +65,7 @@
 ### 当用户问“这本书是怎么说的”
 
 1. `sources/notes/`
-2. `sources/raw/`
+2. 仓库根目录 `微信读书笔记/` 与 `.weread-sync/raw_notes/`
 3. `sources/books/`
 4. `concepts/`
 
@@ -145,16 +145,17 @@
 
 - 一文件一单元
 - 使用受控 taxonomy
-- 文件名使用 ASCII 和稳定 ID
+- 文件名使用 ASCII 和稳定 ID；新 ID 使用 `类型-主题域-序号`，避免不同主题目录内的短 ID 冲突
 - 只使用 `draft`、`reviewed`、`published` 三种状态
 - 不要把多本书、多个不相关主题硬塞进同一张卡
 - 原始导出不是最终知识单元，不能直接把整本书复制进 `concepts/`、`actions/` 或 `ideas/`
+- 新知识条目使用 `schema_version: 2`，并通过 `.weread-sync/scripts/validate_knowledge.py` 校验；旧条目可逐步迁移
 
 如果是根据新书摘写内容，按下面顺序写回：
 
 1. 如果书籍卡不存在，先在 `sources/books/` 下创建 `source_book`
-2. 如果需要让 Agent 直接处理原始内容，把工作副本放入 `sources/raw/`
-3. 再在 `sources/notes/` 下创建来源笔记，保留引用线索和自己的想法
+2. 如果需要 Agent 直接处理原始内容，引用仓库现有的 `微信读书笔记/` 导出或 `.weread-sync/raw_notes/` 原始 JSON；仅在确有需要时复制工作副本，不重复归档整本内容
+3. 再在 `sources/notes/` 下创建来源笔记，保留章节、短定位线索，以及可用的微信读书 `bookId`、`reviewId`、划线 ID 或 range
 4. 再创建对应的 `concept_card` 或 `action_card`
 5. 如果该主题已经有多张卡，再整理成 `collection` 主题包
 6. 当主题包稳定后，再在 `ideas/` 中沉淀 `idea_seed`

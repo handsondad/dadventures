@@ -1,18 +1,53 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""微信读书笔记 JSON转MD格式 - 匹配原始导出格式"""
-import os, json, re
+"""Convert synchronized WeRead JSON into a Markdown reading archive."""
+import json
+import re
 from pathlib import Path
 from datetime import datetime
+from urllib.parse import urlencode
 
-BASE = Path(r"d:\xiuqinCode\xiuqin\dadventures\.weread-sync\raw_notes")
-OUT = Path(r"d:\xiuqinCode\xiuqin\dadventures\微信读书笔记")
+BASE = Path(__file__).resolve().parents[1] / "raw_notes"
+OUT = Path(__file__).resolve().parents[2] / "微信读书笔记"
 
 def format_time(ts):
     """Unix时间戳转 YYYY/MM/DD"""
     if not ts:
         return ""
-    return datetime.fromtimestamp(ts).strftime('%Y/%m/%d')
+    return datetime.fromtimestamp(int(ts)).strftime('%Y/%m/%d')
+
+
+def weread_link(book_id, chapter_uid=0, note_range=""):
+    """Build a WeRead deep link when the source provides enough location data."""
+    params = {"bookId": book_id}
+    match = re.fullmatch(r"(\d+)-(\d+)", str(note_range or ""))
+    if chapter_uid and match:
+        params.update(
+            chapterUid=chapter_uid,
+            rangeStart=match.group(1),
+            rangeEnd=match.group(2),
+        )
+        return "weread://bestbookmark?" + urlencode(params)
+    if chapter_uid:
+        return "weread://reading?" + urlencode(
+            {"bId": book_id, "chapterUid": chapter_uid}
+        )
+    return "weread://reading?" + urlencode({"bId": book_id})
+
+
+def source_locator(item, book_id):
+    details = []
+    if item.get("reviewId"):
+        details.append(f"reviewId: `{item['reviewId']}`")
+    if item.get("bookmarkId"):
+        details.append(f"bookmarkId: `{item['bookmarkId']}`")
+    if item.get("chapterUid"):
+        details.append(f"chapterUid: `{item['chapterUid']}`")
+    if item.get("range"):
+        details.append(f"range: `{item['range']}`")
+    if details:
+        details.append(f"[在微信读书打开]({weread_link(book_id, item.get('chapterUid'), item.get('range'))})")
+    return "；".join(details)
 
 def convert_to_md(book_dir, category_dir):
     """将一本书的JSON转为MD"""
@@ -27,8 +62,9 @@ def convert_to_md(book_dir, category_dir):
     title = data.get('title', book_dir.name)
     author = data.get('author', '')
     reviews = data.get('reviews', [])
+    marks = data.get('marks', [])
     
-    if not reviews:
+    if not reviews and not marks:
         print(f"  [跳过] {title} - 无笔记")
         return False
     
@@ -43,10 +79,13 @@ def convert_to_md(book_dir, category_dir):
         create_time = r.get('createTime', 0)
         
         item = {
+            'reviewId': r.get('reviewId', ''),
             'content': content,
             'abstract': abstract,
             'time': format_time(create_time),
             'ts': create_time,
+            'chapterUid': r.get('chapterUid', 0),
+            'range': r.get('range', ''),
         }
         
         if ch_name:
@@ -60,7 +99,11 @@ def convert_to_md(book_dir, category_dir):
     md_lines = []
     md_lines.append(f"《{title}》")
     md_lines.append(f"\n{author}")
-    md_lines.append(f"\n{len(reviews)}个笔记\n")
+    md_lines.append(f"\n微信读书 bookId：`{data.get('bookId', '')}`")
+    md_lines.append(
+        f"\n{len(marks)} 条划线，{len(reviews)} 条想法/点评"
+        f"（同步时间：{format_time(data.get('fetchedAt', 0)) or '未知'}）\n"
+    )
     
     # 整书点评放最前面
     if no_chapter:
@@ -69,11 +112,17 @@ def convert_to_md(book_dir, category_dir):
             if item['content']:
                 md_lines.append(f"\n◆ {item['time']}发表想法\n")
                 md_lines.append(f"\n{item['content']}\n")
+                locator = source_locator(item, data.get('bookId', ''))
+                if locator:
+                    md_lines.append(f"\n来源定位：{locator}\n")
                 # 如果content是abstract的摘录，追加完整abstract
                 if item['abstract'] and item['abstract'] != item['content']:
                     md_lines.append(f"\n原文：{item['abstract']}\n")
             elif item['abstract']:
                 md_lines.append(f"\n原文：{item['abstract']}\n")
+                locator = source_locator(item, data.get('bookId', ''))
+                if locator:
+                    md_lines.append(f"\n来源定位：{locator}\n")
     
     # 按章节输出
     for ch_name, items in sorted(chapters.items()):
@@ -82,11 +131,31 @@ def convert_to_md(book_dir, category_dir):
             if item['content']:
                 md_lines.append(f"\n◆ {item['time']}发表想法\n")
                 md_lines.append(f"\n{item['content']}\n")
+                locator = source_locator(item, data.get('bookId', ''))
+                if locator:
+                    md_lines.append(f"\n来源定位：{locator}\n")
                 # 如果content是abstract的摘录，追加完整abstract
                 if item['abstract'] and item['abstract'] != item['content']:
                     md_lines.append(f"\n原文：{item['abstract']}\n")
             elif item['abstract']:
                 md_lines.append(f"\n◆ {item['abstract']}\n")
+                locator = source_locator(item, data.get('bookId', ''))
+                if locator:
+                    md_lines.append(f"\n来源定位：{locator}\n")
+
+    if marks:
+        md_lines.append("\n划线\n")
+        for mark in sorted(marks, key=lambda x: x.get('createTime', 0), reverse=True):
+            chapter_name = mark.get('chapterName') or "未标注章节"
+            md_lines.append(f"\n### {chapter_name}\n")
+            md_lines.append(f"\n> {mark.get('markText', '').strip()}\n")
+            created = format_time(mark.get('createTime', 0))
+            if created:
+                md_lines.append(f"\n划线时间：{created}")
+            locator = source_locator(mark, data.get('bookId', ''))
+            if locator:
+                md_lines.append(f"\n来源定位：{locator}")
+            md_lines.append("")
     
     # 保存MD
     out_dir = OUT / category_dir

@@ -13,10 +13,9 @@
 
 ### 第一步：整理来源笔记
 
-- 从 `../微信读书/` 选择一本当前要加工的微信读书笔记
-- 如需让 Agent 直接参与整理，把工作副本放入 `sources/raw/`
+- 从仓库根目录 `微信读书笔记/` 选择一本阅读档案；必要时回查 `.weread-sync/raw_notes/` 中的原始 JSON
 - 创建 `source_book`
-- 按章节、主题或问题簇创建 `source_note`
+- 按章节、主题或问题簇创建 `source_note`，保存 `bookId`、`reviewId`/划线 ID、章节名、chapterUid、range 等可用定位字段
 - 每张 `source_note` 至少补齐：核心摘要、原始定位、可引用片段、我的想法、可延展的想法火花
 
 ### 第二步：拆概念卡和动作卡
@@ -77,3 +76,11 @@
 - 3 条闪光点
 - 1 组可用引用线索
 - 明确的来源说明
+
+## 来源回链与复核
+
+- 每条观点至少关联一个 `source_note`；来源笔记尽量关联 `source_book`。
+- 优先保留微信读书条目 ID 与章节/range，并在有定位数据时使用 `weread://` 深链接；章节短句仅作为补充定位，不替代来源 ID。
+- 写入知识卡前核对书名、作者和章节；清楚标记直接书摘、个人笔记、跨书综合或个人推断。
+- 复核后将状态从 `draft` 改为 `reviewed`；经确认可稳定复用后再改为 `published`，并更新 `last_reviewed`。
+- 新建内容使用模板的 `schema_version: 2`，完成后运行 `python .weread-sync/scripts/validate_knowledge.py`。

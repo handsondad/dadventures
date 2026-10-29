@@ -1,6 +1,7 @@
 ---
 doc_type: idea_seed
-id: idea-0001
+schema_version: 2
+id: idea-investing-0001
 title: fill_in_short_slug
 title_zh: 填写想法标题
 status: draft
@@ -23,11 +24,11 @@ use_cases:
 core_questions:
   - 周期为什么总让人高估当下
 theme_refs:
-  - collection-0001
+  - collection-investing-0001
 source_refs:
-  - note-0001
-  - concept-0001
-  - action-0001
+  - note-investing-0001
+  - concept-investing-0001
+  - action-investing-0001
 last_reviewed: 2026-03-13
 ---
 

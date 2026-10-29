@@ -1,76 +1,40 @@
-# 孩子的奇妙视界
+# 微信读书知识库
 
-孩子的奇妙视界是一个以 OpenClaw 为入口的“十万个为什么式亲子共学智能体”项目。
+这是一个围绕微信读书个人笔记建立的 Markdown 知识库。它的目标不是把划线堆在一起，而是把值得长期复用的内容整理成有来源、有边界、能检索的知识单元。
 
-它的重点不是先建设一个大而全的知识库，而是先把下面几件事固定下来：
+## 知识层次
 
-- 把角色从“通用助手”切换成“孩子和老爸一起认识世界和自己”的双层回答助手
-- 按年龄阶段控制解释深度、句式复杂度和追问方式
-- 通过 Prompt 框架把 LLM 的生成能力变成稳定、可复用的回答工作流
-- 在需要时结合 OpenClaw 的网页检索能力补齐新鲜事实和来源
-- 把高价值回答沉淀成可复用的主题笔记，而不是只停留在聊天里
+| 层次 | 目录 | 用途 |
+|---|---|---|
+| 书目 | `openclaw/workspace/sources/books/` | 记录书籍、阅读来源和整理进度 |
+| 来源笔记 | `openclaw/workspace/sources/notes/` | 保留章节摘要、个人想法和定位线索 |
+| 概念卡 | `openclaw/workspace/concepts/` | 回答“这是什么意思、为什么重要” |
+| 行动卡 | `openclaw/workspace/actions/` | 沉淀判断规则、步骤和检查清单 |
+| 主题包 | `openclaw/workspace/collections/` | 聚合多个来源和知识卡，回答跨书主题问题 |
+| 想法种子 | `openclaw/workspace/ideas/` | 保存尚待验证或继续发展的个人想法 |
 
-## 项目目标
+## 微信读书导入
 
-1. 孩子能听懂：先给一个适龄、具体、不过载的解释。
-2. 老爸能接住：再给一个父母层的机制说明、追问方式和互动建议。
-3. 同时解释世界和自我：既回答“外部世界为什么这样”，也帮助孩子理解“我怎么感受、怎么思考、怎么行动”。
-4. 回答可持续复用：对高频问题逐步沉淀为主题笔记。
-5. 以 OpenClaw 为统一入口：通过独立配置包直接切到专用 workspace。
+同步脚本位于仓库根目录的 `.weread-sync/scripts/`：
 
-## 目录结构
+1. `sync_final.py` 获取有笔记的书籍、个人划线和想法/点评，并保留来源 ID 与章节定位。
+2. `json2md.py` 将原始 JSON 生成为按书阅读的 Markdown 副本。
+3. 人工审核后，按工作流将内容沉淀到本目录下的来源笔记和知识卡。
 
-```text
-./
-  README.md
-  openclaw/
-    README.md
-    OPENCLAW_INTEGRATION.md
-    openclaw.json
-    workspace/
-      AGENTS.md
-      SOUL.md
-      IDENTITY.md
-      USER.md
-      MEMORY.md
-      TOOLS.md
-      HEARTBEAT.md
-      AGE_STAGES.md
-      PROMPT_PLAYBOOK.md
-      SKILLS.md
-      notes/
-        README.md
-      _templates/
-        topic_note_template.md
-        answer_script_template.md
-```
+完整命令和 API 数据范围见仓库根目录的 [.weread-sync/README.md](../.weread-sync/README.md)。
 
-## 适合处理的问题
+## 整理原则
 
-- 为什么天会黑
-- 为什么我会生气
-- 为什么植物会长大
-- 为什么我会害怕打针
-- 为什么飞机会飞
-- 为什么要刷牙
-- 为什么我会想妈妈
+- 先保留原始来源，再做摘要与抽象；知识卡必须能回到来源笔记或书目。
+- 区分书中主张、个人转述与个人判断；没有页码时使用章节名、微信读书条目 ID 或可搜索短句定位，不编造页码。
+- 优先保留短引用、定位信息和转述，不复制大段原文。
+- 一个文件只表达一个知识单元；相近主题通过引用和主题包关联，不把所有内容塞入同一张卡。
+- 状态仅使用 `draft`、`reviewed`、`published`；通过模板逐步采用受控 taxonomy 与 schema 校验。
 
-## 默认回答样式
+## 常用入口
 
-这套工作区默认把一个问题拆成几层：
-
-1. 给孩子怎么说
-2. 给爸爸怎么接
-3. 一起观察或做个小实验
-4. 可以继续问孩子什么
-5. 如果需要，再补充来源与边界
-
-## 多模态定位
-
-当前这套环境里可验证的默认模型是文本输入能力，因此本项目把“多模态回答”定义为：
-
-- 能输出适合配图的画面说明
-- 能输出适合配音的讲述脚本
-- 能输出适合父子互动的动作、观察或小游戏
-
-如果后续接入支持视觉或图像生成的模型，可以在现有框架上继续升级，而不需要重写角色规则。
+- 工作区规则：`openclaw/workspace/AGENTS.md`
+- 整理流程：`openclaw/workspace/IDEA_CAPTURE_WORKFLOW.md`
+- 受控词表：`openclaw/workspace/taxonomy/taxonomy.md`
+- 模板：`openclaw/workspace/_templates/`
+- OpenClaw 接入说明：`openclaw/README.md`

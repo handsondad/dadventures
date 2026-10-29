@@ -1,6 +1,7 @@
 ---
 doc_type: concept_card
-id: concept-0001
+schema_version: 2
+id: concept-investing-0001
 title: fill_in_short_slug
 title_zh: 填写中文标题
 status: draft
@@ -18,9 +19,9 @@ idea_sparks:
 concept_type: principle
 claim_basis: direct_book_note
 source_refs:
-  - note-0001
+  - note-investing-0001
 related_actions:
-  - action-0001
+  - action-investing-0001
 aliases:
   - 填写另一个常见说法
 search_terms:

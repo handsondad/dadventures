@@ -1,86 +1,36 @@
-# WeRead Sync - 微信读书笔记同步工作流
+# 使用指南
 
-## 使用方式
-
-### 方式一：直接告诉 CodeBuddy（推荐）
-
-只需对我说：
-> "帮我抽取最新的微信读书笔记并完成知识库加工"
-
-我会自动执行完整流程：
-1. 从微信读书 API 提取新增笔记
-2. 转换为知识库格式
-3. 保存到 `微信读书知识库/openclaw/workspace/books/`
-
-### 方式二：其他 Agent 调用
-
-其他 Agent（如 workbuddy）可以通过以下方式触发：
-
-1. **使用 PowerShell 脚本**：
-   ```powershell
-   cd d:/xiuqinCode/xiuqin/dadventures/.weread-sync/scripts
-   .\Quick-Sync.ps1
-   ```
-
-2. **分步执行**：
-   ```powershell
-   # 提取笔记
-   .\Sync-WeReadNotes.ps1
-   # 处理为知识库
-   .\Process-RawNotes.ps1 -All
-   ```
-
-### 方式三：手动运行菜单
+## 1. 同步微信读书
 
 ```powershell
-cd d:/xiuqinCode/xiuqin/dadventures/.weread-sync/scripts
-.\Menu.ps1
+$env:WEREAD_API_KEY = "你的微信读书 API Key"
+python .weread-sync\scripts\sync_final.py
 ```
 
-## 脚本说明
+同步脚本从环境变量读取 `WEREAD_API_KEY`；也兼容本机 `~/.codebuddy/.env`。同步接口错误会显示在终端；只要有书籍失败，脚本就以非零状态结束，便于重试和自动化检测。
 
-| 脚本 | 功能 |
-|------|------|
-| Menu.ps1 | 主菜单入口 |
-| Quick-Sync.ps1 | 快速增量同步 |
-| Sync-WeReadNotes.ps1 | 提取笔记 |
-| Process-RawNotes.ps1 | 处理原始笔记 |
+## 2. 转换为 Markdown 阅读档案
 
-## 工作流程
-
-```
-微信读书 API
-    ↓
-Sync-WeReadNotes.ps1 (提取笔记)
-    ↓
-.weread-sync/raw_notes/ (原始数据)
-    ↓
-Process-RawNotes.ps1 (处理转换)
-    ↓
-微信读书知识库/openclaw/workspace/books/ (知识库)
+```powershell
+python .weread-sync\scripts\json2md.py
 ```
 
-## 状态文件
+输出位于 `微信读书笔记/未分类/`。脚本保留划线、想法/点评、微信读书条目 ID、章节位置和可生成的 App 深链接。
 
-- `state/sync_state.json` - 同步状态和时间戳
-- `state/extracted_books.json` - 已提取书籍列表
-- `state/failed_extracts.json` - 提取失败记录
-- `processed/processed_records.json` - 已处理记录
+## 3. 整理到知识库
 
-## 注意事项
+根据 `微信读书知识库/openclaw/workspace/IDEA_CAPTURE_WORKFLOW.md`，先建立来源书目和来源笔记，再视需要拆成概念卡、行动卡、主题包或想法种子。请区分书中主张、个人转述和个人判断，并保留可回溯的来源线索。
 
-1. **API Key**: 确保设置了 `WEREAD_API_KEY` 环境变量
-2. **增量同步**: 默认只同步阅读中的书籍（未读完）
-3. **限流**: 脚本内置了限流，避免请求过快
-4. **备份**: 处理前会保留原始笔记
+## 4. 校验知识库
 
-## 故障排查
+```powershell
+python .weread-sync\scripts\validate_knowledge.py
+```
 
-### 提取失败
-- 检查网络连接
-- 确认 API Key 有效
-- 查看 logs 目录下的日志
+脚本检查知识条目的 frontmatter、文档类型、ID 冲突和失效内部引用。新建条目应遵循模板中的 `schema_version: 2`，其受控词值会按 taxonomy 检查。可选参数 `--strict-taxonomy` 可审计旧条目的词表漂移；现存旧条目尚未全部迁移，报告可能包含历史不一致。
 
-### 笔记未更新
-- 检查原始笔记文件是否存在
-- 确认同步时间戳是否正确
+## 注意
+
+- 微信读书笔记原始 JSON 和 Markdown 阅读档案属于个人数据；仓库当前跟踪它们。
+- API 的书签内容目前不可导出，只有书签数量可用。
+- 脚本位置和输出目录均相对于仓库计算，不依赖某台电脑的固定绝对路径。

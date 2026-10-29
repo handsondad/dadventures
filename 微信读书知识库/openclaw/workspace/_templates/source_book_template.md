@@ -1,12 +1,14 @@
 ---
 doc_type: source_book
-id: book-0001
+schema_version: 2
+id: book-investing-0001
 title: fill_in_short_slug
 title_zh: 填写书名
 author: 填写作者
 translator:
 source_platform: weread
-raw_source_path: ../../../微信读书笔记/投资/投资中最重要的事.md
+weread_book_id: ""
+raw_source_path: 微信读书笔记/投资/书名.md
 original_category: investing
 subject_domains:
   - investing
@@ -38,7 +40,7 @@ last_reviewed: 2026-03-13
 ## 原始来源说明
 
 - 对应哪一个微信读书笔记导出文件
-- 如果已复制到 `sources/raw/`，记录当前工作副本文件名
+- 微信读书 `bookId`（如可用）；原始 JSON 可在 `.weread-sync/raw_notes/` 中按 ID 查找
 
 ## 已产出内容
 

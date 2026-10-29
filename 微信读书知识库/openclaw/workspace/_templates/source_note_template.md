@@ -1,9 +1,14 @@
 ---
 doc_type: source_note
-id: note-0001
-source_book: book-0001
+schema_version: 2
+id: note-investing-0001
+source_book: book-investing-0001
+source_platform: weread
+source_book_id: ""
+source_review_ids: []
+source_mark_ids: []
 source_section: 02 理解市场有效性及局限性
-raw_source_path: sources/raw/book-0001-working-copy.md
+raw_source_path: 微信读书笔记/投资/书名.md
 note_kind: chapter_summary
 subject_domains:
   - investing
@@ -17,7 +22,7 @@ idea_sparks:
   - why_market_efficiency_still_leaves_room_for_good_investors
 claim_basis: direct_book_note
 derived_cards:
-  - concept-0001
+  - concept-investing-0001
 status: draft
 last_reviewed: 2026-03-13
 ---
