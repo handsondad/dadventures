@@ -1,0 +1,49 @@
+{
+  "name": "@dadventures/dsh-weread-kb",
+  "version": "0.1.0",
+  "description": "微信读书笔记知识库的 DSH 插件：共享服务、kb_* 与 notes_* 工具、skill、校验，以及「读书问答模式」和「读书整理模式」。",
+  "type": "module",
+  "main": "src/settings.js",
+  "bin": {
+    "weread-kb": "bin/weread-kb.js"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "check": "node bin/weread-kb.js kb_check"
+  },
+  "engines": {
+    "node": ">=24",
+    "dsh": ">=0.2.0-rc.2 <0.3.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.2"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "dadventures",
+    "weread"
+  ],
+  "files": [
+    "src",
+    "bin",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "exports": {
+    ".": "./src/settings.js",
+    "./tools": "./src/tools.js",
+    "./lib": "./src/lib.js",
+    "./package.json": "./package.json"
+  }
+}

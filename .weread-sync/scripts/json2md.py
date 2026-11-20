@@ -8,7 +8,7 @@ from datetime import datetime
 from urllib.parse import urlencode
 
 BASE = Path(__file__).resolve().parents[1] / "raw_notes"
-OUT = Path(__file__).resolve().parents[2] / "微信读书笔记"
+OUT = Path(__file__).resolve().parents[2] / "notes"
 
 def format_time(ts):
     """Unix时间戳转 YYYY/MM/DD"""

@@ -1,0 +1,15 @@
+{
+  "name": "dadventures",
+  "private": true,
+  "description": "微信读书笔记：原始笔记、整理后的知识库，以及把它们接进 DeepSeek Harness 的插件。",
+  "type": "module",
+  "scripts": {
+    "test": "node --test dsh/packages/dsh-weread-kb/tests/*.test.js",
+    "kb": "node dsh/packages/dsh-weread-kb/bin/weread-kb.js",
+    "kb:check": "node dsh/packages/dsh-weread-kb/bin/weread-kb.js kb_check",
+    "dsh:install": "powershell -NoProfile -ExecutionPolicy Bypass -File dsh/scripts/install-dadventures.ps1"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

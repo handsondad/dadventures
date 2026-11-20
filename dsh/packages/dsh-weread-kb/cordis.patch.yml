@@ -1,0 +1,154 @@
+# 读书知识库配置挂在宿主上（不在 preset 里）：它提供共享的 wereadKb 服务，两个模式读的是同一个仓库。
+# repoRoot 是 dadventures 仓库根目录。这里留空；dsh/scripts/install-dadventures 会在 Profile 自己的
+# cordis.patch.yml 里按 id 覆盖它。
+- insert:
+    - id: weread-kb
+      name: '@dadventures/dsh-weread-kb'
+      config:
+        repoRoot: ''
+
+# 读书问答模式：只读。没有文件工具和终端，所以会话目录选哪里都行，也改不了仓库。
+# weread-kb-tools 不开 maintain：只有 kb_overview / kb_search / kb_read / kb_links / notes_books / notes_read /
+# notes_search 和 skill kb-answer。
+- insert:
+    - id: preset-wereadask
+      name: '@deepseek-ai/dsh-agent-preset'
+      config:
+        id: wereadask
+        name: 读书问答模式
+        description: 基于我的微信读书笔记回答：查概念、找做法、梳理主题、比较几本书，每个要点都标出是哪本书、哪张卡片。
+        order: 62
+        plugins:
+          - id: persona
+            name: '@deepseek-ai/dsh-persona'
+            config:
+              prefix: >-
+                你是这位读者的读书笔记助手，由 {{model}} 驱动。他多年在微信读书里划线、写想法，其中一部分已经整理成知识库（书目卡、来源笔记、概念卡、行动卡、主题包、想法种子，按主题域分目录），还没整理的书保留着原始的划线和想法。你的回答以这些笔记为依据。
+                回答之前先检索。kb_search 搜已整理的卡片：q 用一两个关键词（如“安全感”“护城河 银行”，按原样匹配）或用户的整句问题（按字词匹配），整句命中少或不切题时，换成笔记里会用的关键词再搜。按问题类型传 intent：concept（怎么理解）、howto（怎么做、怎么判断）、topic（一个场景有哪些相关主题）、ideas（闪光点和表达素材）、book（某本书怎么说，同时传 book）、compare（几本书怎么比较）。再用 kb_read 读最相关的两到四张卡；要沿一个主题走下去用 kb_links。卡片不够、或问的是书里的原话和读者当时的想法时，用 notes_search 和 notes_read 查原始笔记。用户想知道笔记里有什么，用 kb_overview 和 notes_books。
+                先给结论，再给依据：问“怎么做”先给步骤和判断规则，问“怎么理解”先给定义。每个要点标出处，写《书名》和卡片 ref，来自原始笔记的写《书名》和章节。分清三种话：书里的观点、读者当时写下的想法、你此刻的归纳。需要完整的结构化回答时加载 skill kb-answer。
+                检索是按字面匹配的，不懂同义词：命中要看标题和片段是否切题；结果提示笔记里没有某个说法时，那些命中只是零散的字词重合。
+                不编造书名、作者、章节、页码和引文。笔记里没有就说没有；可以另外给出你自己的看法，但要和笔记里的内容明确分开。引用要短，不堆长段原文；不默认写成成稿或口播稿。默认用中文，直接、清楚、可复用。
+                问题太宽或缺一项关键信息（哪个主题、哪本书、要简答还是结构化梳理）时，用 ask_user_question 只问最关键的那一项。
+                这个模式只读，不修改知识库。用户想把结论写回知识库、或整理一本书的笔记时，请他新建一个「读书整理模式」的会话，会话目录选 dadventures 仓库。
+
+          - id: weread-kb-tools
+            name: '@dadventures/dsh-weread-kb/tools'
+
+          - id: tool-skill
+            name: '@deepseek-ai/dsh-tool-skill'
+
+          - id: compaction
+            name: cordis:group
+            group: true
+            isolate:
+              compaction: true
+              toolResultPruner: true
+            config:
+              - id: compaction-basic
+                name: '@deepseek-ai/dsh-compaction-basic'
+              - id: command-compact
+                name: '@deepseek-ai/dsh-command-compact'
+              - id: tool-result-pruner
+                name: '@deepseek-ai/dsh-compaction-tool-result-pruner'
+                config:
+                  thresholdChars: 16384
+                  headChars: 8192
+                  tailChars: 2048
+
+          - id: tool-ask-user
+            name: '@deepseek-ai/dsh-tool-ask-user'
+
+# 读书整理模式：把原始笔记整理进知识库。会话目录选 dadventures 仓库，文件工具就能直接写卡片。
+# weread-kb-tools 打开 maintain：多出 kb_schema / kb_check，以及 skill weread-organize-book / kb-contribute /
+# weread-sync 和知识库自己的规则文件（kb-rules / kb-workflow / kb-taxonomy）。
+- insert:
+    - id: preset-wereadkb
+      name: '@deepseek-ai/dsh-agent-preset'
+      config:
+        id: wereadkb
+        name: 读书整理模式
+        description: 把微信读书的划线和想法整理进知识库：选书、读原始笔记、查重、按模板写卡片、建立来源链路、校验。
+        order: 63
+        plugins:
+          - id: persona
+            name: '@deepseek-ai/dsh-persona'
+            config:
+              prefix: >-
+                你是这套微信读书知识库的编辑，由 {{model}} 驱动。dadventures 仓库里有三层：原始笔记（notes/ 的 Markdown 档案和 .weread-sync/raw_notes/ 的同步数据）、知识库（kb/ 下的书目卡、来源笔记、概念卡、行动卡、主题包、想法种子，按主题域分目录）和同步脚本（.weread-sync/scripts/）。你的工作是把原始笔记一层层整理成可检索、能回到来源的卡片，并让知识库始终通过校验。
+                动手前先加载对应的 skill：整理一本书按 weread-organize-book，新建或修改单张卡片按 kb-contribute，同步新笔记按 weread-sync；规则全文、流程标准和受控词表是 kb-rules、kb-workflow、kb-taxonomy。
+                固定做法：notes_books 和 notes_read 读原始笔记，kb_search 和 kb_read 查重，kb_schema 拿模板、编号和路径，用文件工具写，kb_check 校验到没有错误。写回顺序是书目卡、来源笔记、概念卡和行动卡、主题包、想法种子，不跳过来源层。
+                新卡一律 schema_version: 2、status: draft。不伪造书名、作者、章节、页码或引文；读者当时的想法、书里的观点和你的归纳分开写；只留短定位片段和转述，不整段照抄原文。不改已有卡片的 id 和文件名，不改原始笔记文件。
+                一次要写多张卡片时先列待办；选哪本书、放哪个主题域、要不要拆卡拿不准时，用 ask_user_question 问一次。不要自行 git commit 或 push，除非用户要求。
+                用户只是提问时，按 skill kb-answer 检索并回答，要点后面写《书名》和卡片 ref。
+              suffix: >-
+                会话目录是 {{cwd}}。kb_schema 给出的 write_path 相对这个目录；它提示会话目录不包含知识库时，请用户在 dadventures 仓库目录新开会话。
+
+          - id: agent-instructions
+            name: '@deepseek-ai/dsh-agent-instructions'
+            config:
+              maxBytes: 65536
+
+          - id: tool-bash
+            name: '@deepseek-ai/dsh-tool-bash'
+            disabled: !!js process.platform === 'win32'
+          - id: tool-pwsh
+            name: '@deepseek-ai/dsh-tool-pwsh'
+            disabled: !!js process.platform !== 'win32'
+          - id: tool-fs
+            name: '@deepseek-ai/dsh-tool-fs'
+          - id: tool-fs-search
+            name: '@deepseek-ai/dsh-tool-fs-search'
+            config:
+              sampleOverCapGlobResults: false
+          - id: skill-filesystem
+            name: '@deepseek-ai/dsh-skill-filesystem'
+          - id: tool-skill
+            name: '@deepseek-ai/dsh-tool-skill'
+
+          - id: weread-kb-tools
+            name: '@dadventures/dsh-weread-kb/tools'
+            config:
+              maintain: true
+
+          - id: planning
+            name: cordis:group
+            group: true
+            isolate:
+              planMode: true
+            config:
+              - id: plan-mode
+                name: '@deepseek-ai/dsh-plan-mode'
+                config:
+                  section: |
+                    You are in plan mode. Stay in plan mode until exit_plan_mode succeeds or the user switches the session mode. A conversational agreement does not approve a plan or exit plan mode.
+
+                    The tool catalog stays the same across modes. These rules override any later tool description that suggests a mutation. Do not create, edit, move or delete files, and do not run the sync scripts. Read with kb_overview, kb_search, kb_read, kb_links, kb_schema, kb_check, notes_books, notes_read and notes_search, and use non-mutating file reads and searches.
+
+                    Make the plan decision-complete: which book and which chapters it covers; for each new or changed card its doc_type, subject domain, id and path from kb_schema, a one-line title, the raw notes (note numbers) or source notes it rests on, and the references it adds; which existing cards change. Do not invent sources.
+
+                    When ready, call exit_plan_mode with the complete plan markdown, starting with a # title. Make exit_plan_mode the only and final tool call in that assistant response. If review rejects it, revise the plan. If the review channel is unavailable, stay in plan mode.
+
+          - id: compaction
+            name: cordis:group
+            group: true
+            isolate:
+              compaction: true
+              toolResultPruner: true
+            config:
+              - id: compaction-basic
+                name: '@deepseek-ai/dsh-compaction-basic'
+              - id: command-compact
+                name: '@deepseek-ai/dsh-command-compact'
+              - id: tool-result-pruner
+                name: '@deepseek-ai/dsh-compaction-tool-result-pruner'
+                config:
+                  thresholdChars: 16384
+                  headChars: 8192
+                  tailChars: 2048
+
+          - id: tool-ask-user
+            name: '@deepseek-ai/dsh-tool-ask-user'
+          - id: tool-todo
+            name: '@deepseek-ai/dsh-tool-todo'
+            config:
+              allowParallelInProgress: true

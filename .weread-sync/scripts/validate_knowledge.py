@@ -8,12 +8,7 @@ import sys
 from pathlib import Path
 
 
-WORKSPACE = (
-    Path(__file__).resolve().parents[2]
-    / "微信读书知识库"
-    / "openclaw"
-    / "workspace"
-)
+KNOWLEDGE_BASE = Path(__file__).resolve().parents[2] / "kb"
 CONTROLLED_FIELDS = {
     "subject_domains": "Subject Domains",
     "note_kind": "Note Kinds",
@@ -125,7 +120,7 @@ def subject_scope(relative_path):
     return parts[2] if parts[0] == "sources" and len(parts) > 2 else parts[1]
 
 
-def validate(root=WORKSPACE, strict_taxonomy=False):
+def validate(root=KNOWLEDGE_BASE, strict_taxonomy=False):
     errors = []
     taxonomy_path = root / "taxonomy" / "taxonomy.md"
     if not taxonomy_path.exists():
@@ -200,6 +195,14 @@ def validate(root=WORKSPACE, strict_taxonomy=False):
                 if not reference or (
                     field == "source_book" and reference == "manual_synthesis"
                 ):
+                    continue
+                # "subject/id" names a card in another subject domain outright.
+                scope, separator, record_id = reference.partition("/")
+                if separator:
+                    if (scope, record_id) not in id_to_paths:
+                        errors.append(
+                            f"{path}: {field} references unknown id '{reference}'"
+                        )
                     continue
                 matches = candidates.get(reference, [])
                 local_matches = [

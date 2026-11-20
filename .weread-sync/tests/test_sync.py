@@ -39,7 +39,7 @@ class SyncTests(unittest.TestCase):
 
     def test_script_paths_are_relative_to_the_repository(self):
         self.assertEqual(sync.BASE, ROOT / ".weread-sync")
-        self.assertEqual(converter.OUT, ROOT / "微信读书笔记")
+        self.assertEqual(converter.OUT, ROOT / "notes")
 
     def test_book_directory_does_not_reuse_a_colliding_title(self):
         with tempfile.TemporaryDirectory() as temp_dir:
@@ -189,6 +189,32 @@ action_type: research_method
 
         self.assertEqual(len(issues), 1)
         self.assertIn("action_type value 'research_method'", issues[0])
+
+    def test_reference_to_another_subject_is_written_as_subject_slash_id(self):
+        def card(doc_type, record_id, extra=""):
+            return f"---\ndoc_type: {doc_type}\nid: {record_id}\nstatus: draft\n{extra}---\n"
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            (root / "taxonomy").mkdir()
+            (root / "taxonomy" / "taxonomy.md").write_text("## Status\n- `draft`\n", encoding="utf-8")
+            for subject in ("parenting", "investing"):
+                folder = root / "concepts" / subject
+                folder.mkdir(parents=True)
+                (folder / "concept-0001.md").write_text(card("concept_card", "concept-0001"), encoding="utf-8")
+            collections = root / "collections" / "work"
+            collections.mkdir(parents=True)
+
+            def issues_for(reference):
+                (collections / "collection-0001.md").write_text(
+                    card("collection", "collection-0001", f"included_cards:\n  - {reference}\n"),
+                    encoding="utf-8",
+                )
+                return validator.validate(root)
+
+            self.assertEqual(issues_for("investing/concept-0001"), [])
+            self.assertIn("ambiguous across subject domains", issues_for("concept-0001")[0])
+            self.assertIn("references unknown id 'work/concept-0001'", issues_for("work/concept-0001")[0])
 
 
 if __name__ == "__main__":

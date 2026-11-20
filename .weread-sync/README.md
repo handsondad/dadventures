@@ -34,7 +34,7 @@ python .weread-sync\scripts\sync_final.py
 python .weread-sync\scripts\json2md.py
 ```
 
-转换结果写入 `微信读书笔记/未分类/`，包含微信读书 `bookId`、笔记 ID、章节/range 和可用的 `weread://` 定位链接。随后人工审核并按知识库工作流整理，不要把原始导出直接当成最终概念卡或行动卡。
+转换结果写入 `notes/未分类/`，包含微信读书 `bookId`、笔记 ID、章节/range 和可用的 `weread://` 定位链接。随后人工审核并按知识库工作流整理，不要把原始导出直接当成最终概念卡或行动卡。
 
 单独转换一本书时，传入它在 `raw_notes/` 下的目录名：
 

@@ -15,11 +15,11 @@ python .weread-sync\scripts\sync_final.py
 python .weread-sync\scripts\json2md.py
 ```
 
-输出位于 `微信读书笔记/未分类/`。脚本保留划线、想法/点评、微信读书条目 ID、章节位置和可生成的 App 深链接。
+输出位于 `notes/未分类/`。脚本保留划线、想法/点评、微信读书条目 ID、章节位置和可生成的 App 深链接。
 
 ## 3. 整理到知识库
 
-根据 `微信读书知识库/openclaw/workspace/IDEA_CAPTURE_WORKFLOW.md`，先建立来源书目和来源笔记，再视需要拆成概念卡、行动卡、主题包或想法种子。请区分书中主张、个人转述和个人判断，并保留可回溯的来源线索。
+根据 `kb/IDEA_CAPTURE_WORKFLOW.md`，先建立来源书目和来源笔记，再视需要拆成概念卡、行动卡、主题包或想法种子。请区分书中主张、个人转述和个人判断，并保留可回溯的来源线索。
 
 ## 4. 校验知识库
 
